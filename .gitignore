@@ -107,4 +107,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+/Assets/Plugins/FMOD/**/*.bundle text eol=lf
+/Assets/Plugins/FMOD/**/Info.plist text eol=lf
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,unity
