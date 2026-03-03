@@ -277,7 +277,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639069249159631862
+  lastModified: 639081437053169785
   FileSizes:
   - Name: Desktop
     Value: 4490
@@ -434,7 +434,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639069249308271752
+  lastModified: 639081437053702594
   FileSizes:
   - Name: Desktop
     Value: 21580384
@@ -664,7 +664,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Vehicles.bank
   Name: Vehicles
   StudioPath: bank:/Vehicles
-  lastModified: 639069249312996771
+  lastModified: 639081437053765159
   FileSizes:
   - Name: Desktop
     Value: 222624
@@ -761,7 +761,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Haptics.bank
   Name: Haptics
   StudioPath: bank:/Haptics
-  lastModified: 639069249159476485
+  lastModified: 639081437053163978
   FileSizes:
   - Name: Desktop
     Value: 387904
@@ -939,7 +939,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 639069249215119491
+  lastModified: 639081437053388802
   FileSizes:
   - Name: Desktop
     Value: 10454752
@@ -983,7 +983,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/VO.bank
   Name: VO
   StudioPath: bank:/VO
-  lastModified: 639069249315575824
+  lastModified: 639081437053740722
   FileSizes:
   - Name: Desktop
     Value: 38592
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -6943617790267620984}
   cacheVersion: 131858
-  cacheTime: 639069249315575824
+  cacheTime: 639081437053765159
   SerializableEventsDict:
   - key: event:/Haptics/box_open
     index: 0
@@ -1232,7 +1232,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639069249159610826
+  lastModified: 639081437053167232
   FileSizes:
   - Name: Desktop
     Value: 15938
@@ -1279,7 +1279,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Dialogue_JP.bank
   Name: Dialogue_JP
   StudioPath: bank:/Dialogue_JP
-  lastModified: 639069249156858866
+  lastModified: 639081437053153215
   FileSizes:
   - Name: Desktop
     Value: 66560
@@ -1488,7 +1488,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Dialogue_EN.bank
   Name: Dialogue_EN
   StudioPath: bank:/Dialogue_EN
-  lastModified: 639069249155853129
+  lastModified: 639081437053149699
   FileSizes:
   - Name: Desktop
     Value: 61120
@@ -1931,7 +1931,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Dialogue_CN.bank
   Name: Dialogue_CN
   StudioPath: bank:/Dialogue_CN
-  lastModified: 639069249154868987
+  lastModified: 639081437053146013
   FileSizes:
   - Name: Desktop
     Value: 52416
