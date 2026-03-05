@@ -277,7 +277,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639081437053169785
+  lastModified: 639069249159631862
   FileSizes:
   - Name: Desktop
     Value: 4490
@@ -434,7 +434,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639081437053702594
+  lastModified: 639069249308271752
   FileSizes:
   - Name: Desktop
     Value: 21580384
@@ -664,7 +664,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Vehicles.bank
   Name: Vehicles
   StudioPath: bank:/Vehicles
-  lastModified: 639081437053765159
+  lastModified: 639069249312996771
   FileSizes:
   - Name: Desktop
     Value: 222624
@@ -761,7 +761,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Haptics.bank
   Name: Haptics
   StudioPath: bank:/Haptics
-  lastModified: 639081437053163978
+  lastModified: 639069249159476485
   FileSizes:
   - Name: Desktop
     Value: 387904
@@ -939,7 +939,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 639081437053388802
+  lastModified: 639069249215119491
   FileSizes:
   - Name: Desktop
     Value: 10454752
@@ -983,7 +983,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/VO.bank
   Name: VO
   StudioPath: bank:/VO
-  lastModified: 639081437053740722
+  lastModified: 639069249315575824
   FileSizes:
   - Name: Desktop
     Value: 38592
@@ -1081,142 +1081,23 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -6943617790267620984}
-  - {fileID: 8337521847188581502}
-  - {fileID: 2768318765958545784}
-  - {fileID: 613840437096466006}
-  - {fileID: -1813113135041771331}
-  - {fileID: 6682846690539193}
-  - {fileID: -405651161911907643}
-  - {fileID: -5325625988281323392}
-  - {fileID: -2490931828576876520}
-  - {fileID: -168052750983676050}
+  - {fileID: 6938906154865167498}
+  - {fileID: 5215099242572089818}
   EditorEvents:
-  - {fileID: -9106589097142869606}
-  - {fileID: 5020787520530685801}
-  - {fileID: -1520425974946657364}
-  - {fileID: 2985586834326655841}
-  - {fileID: 7649693801023001911}
-  - {fileID: 5280104081415406296}
-  - {fileID: 6077929919284623250}
-  - {fileID: -6223599998374947902}
-  - {fileID: -8253660188359536549}
-  - {fileID: -8845293275785591779}
-  - {fileID: -3065076189549438276}
-  - {fileID: 1251256740855544413}
-  - {fileID: -5487978049416546448}
-  - {fileID: -8960609144118954710}
-  - {fileID: -1089809691966030880}
-  - {fileID: -6380891538771606586}
-  - {fileID: -1830831659819596625}
-  - {fileID: 3634827805542965575}
-  - {fileID: 4889968314803009436}
-  - {fileID: 2867323047799670870}
-  - {fileID: 3082550694776416464}
-  - {fileID: 3971100173676680542}
-  - {fileID: -31854941448765559}
-  - {fileID: -2872643463231689906}
-  - {fileID: 1738875340129623038}
-  - {fileID: -4249616080426678368}
-  - {fileID: -4660698009711888936}
-  - {fileID: -1004446065716668936}
-  - {fileID: -1660607912697859282}
-  - {fileID: 563197267565578856}
-  - {fileID: -160498706588700911}
-  - {fileID: 2318041829841267463}
-  - {fileID: -5737206299689175826}
-  - {fileID: -3303719661392882239}
-  - {fileID: -8271183647886468357}
-  - {fileID: 2427662885785793504}
-  - {fileID: 2595044621015256263}
-  - {fileID: 5827829302890124895}
-  - {fileID: 9026538559300922827}
+  - {fileID: 4309642416868023722}
+  - {fileID: 7784490584134885889}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 6682846690539193}
+  - {fileID: 5215099242572089818}
   StringsBanks:
-  - {fileID: -6943617790267620984}
+  - {fileID: 6938906154865167498}
   cacheVersion: 131858
-  cacheTime: 639081437053765159
+  cacheTime: 639082650586210639
   SerializableEventsDict:
-  - key: event:/Haptics/box_open
+  - key: event:/Enviroment/Bamboo
     index: 0
-  - key: event:/Haptics/shotgun_m1014_prime_in
+  - key: event:/Enviroment/SYC_branches
     index: 1
-  - key: event:/Haptics/car_engine
-    index: 2
-  - key: event:/Haptics/shotgun_m1014_fire
-    index: 3
-  - key: event:/Haptics/pool_ball
-    index: 4
-  - key: event:/Haptics/knapsack_open
-    index: 5
-  - key: event:/Haptics/servo
-    index: 6
-  - key: event:/Haptics/shotgun_m1014_prime_out
-    index: 7
-  - key: event:/Haptics/rain_under_umbrella
-    index: 8
-  - key: snapshot:/Slow-Motion
-    index: 9
-  - key: snapshot:/Health Low
-    index: 10
-  - key: snapshot:/Reverb/Sewer Reverb
-    index: 11
-  - key: snapshot:/Pause
-    index: 12
-  - key: snapshot:/Reverb/Cave Reverb
-    index: 13
-  - key: event:/Music/Level 03
-    index: 14
-  - key: event:/Music/Level 01
-    index: 15
-  - key: event:/Music/Radio Station
-    index: 16
-  - key: event:/Music/Level 02
-    index: 17
-  - key: event:/Character/Player Footsteps
-    index: 18
-  - key: event:/Character/Door Open
-    index: 19
-  - key: event:/Weapons/Explosion
-    index: 20
-  - key: event:/Character/Enemy Footsteps
-    index: 21
-  - key: event:/Interactables/Barrel Roll
-    index: 22
-  - key: event:/Character/Door Close
-    index: 23
-  - key: event:/Ambience/Country
-    index: 24
-  - key: event:/Ambience/City
-    index: 25
-  - key: event:/Character/Radio Dialogue
-    index: 26
-  - key: event:/UI/Okay
-    index: 27
-  - key: event:/Character/Dialogue
-    index: 28
-  - key: event:/Weapons/Pistol
-    index: 29
-  - key: event:/Character/Health
-    index: 30
-  - key: event:/Interactables/Wooden Collision
-    index: 31
-  - key: event:/Ambience/Forest
-    index: 32
-  - key: event:/UI/Cancel
-    index: 33
-  - key: event:/Weapons/Machine Gun
-    index: 34
-  - key: event:/Vehicles/Car Engine
-    index: 35
-  - key: event:/Vehicles/Ride-on Mower
-    index: 36
-  - key: event:/VO/Main Menu
-    index: 37
-  - key: event:/VO/Welcome
-    index: 38
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,7 +1113,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639081437053167232
+  lastModified: 639069249159610826
   FileSizes:
   - Name: Desktop
     Value: 15938
@@ -1279,7 +1160,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Dialogue_JP.bank
   Name: Dialogue_JP
   StudioPath: bank:/Dialogue_JP
-  lastModified: 639081437053153215
+  lastModified: 639069249156858866
   FileSizes:
   - Name: Desktop
     Value: 66560
@@ -1488,7 +1369,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Dialogue_EN.bank
   Name: Dialogue_EN
   StudioPath: bank:/Dialogue_EN
-  lastModified: 639081437053149699
+  lastModified: 639069249155853129
   FileSizes:
   - Name: Desktop
     Value: 61120
@@ -1705,6 +1586,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 147
+--- !u!114 &4309642416868023722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Bamboo
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Bamboo
+  Guid:
+    Data1: 1561321542
+    Data2: 1224987664
+    Data3: -1726827880
+    Data4: -1347654455
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4889968314803009436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,6 +1691,26 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &5215099242572089818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639082650586194725
+  FileSizes:
+  - Name: Desktop
+    Value: 170848
   Exists: 1
 --- !u!114 &5280104081415406296
 MonoBehaviour:
@@ -1889,6 +1817,26 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6938906154865167498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639082650586210639
+  FileSizes:
+  - Name: Desktop
+    Value: 834
+  Exists: 1
 --- !u!114 &7649693801023001911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1916,6 +1864,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1047
+--- !u!114 &7784490584134885889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/SYC_branches
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/SYC_branches
+  Guid:
+    Data1: -1026805967
+    Data2: 1258923686
+    Data3: 1121935513
+    Data4: 28835265
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8337521847188581502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1931,7 +1906,7 @@ MonoBehaviour:
   Path: Assets/Fmod/SYC_testExample/Build/Desktop/Dialogue_CN.bank
   Name: Dialogue_CN
   StudioPath: bank:/Dialogue_CN
-  lastModified: 639081437053146013
+  lastModified: 639069249154868987
   FileSizes:
   - Name: Desktop
     Value: 52416

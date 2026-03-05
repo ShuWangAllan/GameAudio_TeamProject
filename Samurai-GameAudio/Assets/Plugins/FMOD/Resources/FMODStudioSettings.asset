@@ -610,8 +610,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/Fmod/SYC_testExample/Examples.fspro
-  sourceBankPath: Assets/Fmod/SYC_testExample/Build
+  sourceProjectPath: ../GameAudioAssets/FModLib/FModLib.fspro
+  sourceBankPath: ../GameAudioAssets/FModLib/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -635,15 +635,7 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks:
-  - Dialogue_CN
-  - Dialogue_EN
-  - Dialogue_JP
-  - Haptics
-  - Music
-  - SFX
-  - Vehicles
-  - VO
+  Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
