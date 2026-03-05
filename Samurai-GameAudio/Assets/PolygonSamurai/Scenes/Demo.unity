@@ -33759,9 +33759,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 197420, guid: 5372fde17819ad04b83f83d3d5140c4c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 893570250}
     - targetCorrespondingSourceObject: {fileID: 6182528322560897325, guid: 5372fde17819ad04b83f83d3d5140c4c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 467126137}
@@ -48293,6 +48290,7 @@ GameObject:
   - component: {fileID: 656592855}
   - component: {fileID: 656592859}
   - component: {fileID: 656592860}
+  - component: {fileID: 656592861}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -48456,6 +48454,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &656592861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656592854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1958460028
+      Data2: 1217165032
+      Data3: -261621348
+      Data4: -48242944
+    Path: event:/Music/Level 01
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &657557223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64609,42 +64638,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 425494, guid: dcacebb11cce36848bb6026a957274e9, type: 3}
   m_PrefabInstance: {fileID: 893093987}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &893570246 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 197420, guid: 5372fde17819ad04b83f83d3d5140c4c, type: 3}
-  m_PrefabInstance: {fileID: 467126134}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &893570250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 893570246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 116802309
-      Data2: 1337121660
-      Data3: -1106469735
-      Data4: -1407594313
-    Path: event:/Enviroment/Fire(torches)
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 3
-  OverrideMaxDistance: 10
 --- !u!1001 &894360326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73902,11 +73895,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 401814, guid: 625541a65d7179346a2fac339f4d3f34, type: 3}
   m_PrefabInstance: {fileID: 1023855389}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1024452275 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 197420, guid: 5372fde17819ad04b83f83d3d5140c4c, type: 3}
-  m_PrefabInstance: {fileID: 1530614976}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1024991176
 PrefabInstance:
@@ -110310,9 +110298,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 197420, guid: 5372fde17819ad04b83f83d3d5140c4c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1530614985}
     - targetCorrespondingSourceObject: {fileID: 6182528322560897325, guid: 5372fde17819ad04b83f83d3d5140c4c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1530614979}
@@ -110350,37 +110335,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!114 &1530614985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024452275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 116802309
-      Data2: 1337121660
-      Data3: -1106469735
-      Data4: -1407594313
-    Path: event:/Enviroment/Fire(torches)
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 10
 --- !u!1001 &1532390370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150032,7 +149986,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112492303}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.011444333, y: -0, z: -0, w: 0.99993455}
+  m_LocalRotation: {x: -0.011443852, y: -0, z: -0, w: 0.99993455}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
