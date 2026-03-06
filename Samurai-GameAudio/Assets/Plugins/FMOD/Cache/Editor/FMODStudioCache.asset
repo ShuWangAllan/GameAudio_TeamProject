@@ -439,6 +439,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 21580384
   Exists: 1
+--- !u!114 &-4993103217256234880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Staff/Fire(Torches)
+  m_EditorClassIdentifier: 
+  Path: event:/Staff/Fire(Torches)
+  Guid:
+    Data1: -2002662985
+    Data2: 1326039950
+    Data3: 1370645388
+    Data4: -1544313170
+  Banks:
+  - {fileID: 1834956772298290810}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 5
+  MaxDistance: 8
+  Length: 10031
 --- !u!114 &-4963996983212672429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,21 +1110,25 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 6938906154865167498}
   - {fileID: 5215099242572089818}
+  - {fileID: 1834956772298290810}
   EditorEvents:
   - {fileID: 4309642416868023722}
   - {fileID: 7784490584134885889}
+  - {fileID: -4993103217256234880}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5215099242572089818}
   StringsBanks:
   - {fileID: 6938906154865167498}
   cacheVersion: 131858
-  cacheTime: 639082650586210639
+  cacheTime: 639083162273373009
   SerializableEventsDict:
   - key: event:/Enviroment/Bamboo
     index: 0
   - key: event:/Enviroment/SYC_branches
     index: 1
+  - key: event:/Staff/Fire(Torches)
+    index: 2
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1244,6 +1275,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1834956772298290810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fire(Torches).bank
+  m_EditorClassIdentifier: 
+  Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
+  Name: Fire(Torches)
+  StudioPath: bank:/SW_Banks/Fire(Torches)
+  lastModified: 639083162273373009
+  FileSizes:
+  - Name: Desktop
+    Value: 153088
+  Exists: 1
 --- !u!114 &2318041829841267463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1707,7 +1758,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639082650586194725
+  lastModified: 639083137662856743
   FileSizes:
   - Name: Desktop
     Value: 170848
@@ -1832,10 +1883,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639082650586210639
+  lastModified: 639083137662871635
   FileSizes:
   - Name: Desktop
-    Value: 834
+    Value: 960
   Exists: 1
 --- !u!114 &7649693801023001911
 MonoBehaviour:
