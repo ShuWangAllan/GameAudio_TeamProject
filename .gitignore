@@ -29,6 +29,9 @@ Temporary Items
 ### Windows ###
 Thumbs.db
 Desktop.ini
+*.rar
+*.zip
+*.7z
 
 ############################################################
 # Unity project: Samurai-GameAudio
