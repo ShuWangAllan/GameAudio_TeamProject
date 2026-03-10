@@ -129,6 +129,34 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-8677324266785559666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Base_ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Base_ambience
+  Guid:
+    Data1: 692341479
+    Data2: 1235048855
+    Data3: -1309985861
+    Data4: 2061842975
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1917269201583920449}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76000
 --- !u!114 &-8583544005882989723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,6 +872,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-1618157387039446585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/TestingFalloff
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/TestingFalloff
+  Guid:
+    Data1: -820759894
+    Data2: 1161459507
+    Data3: 1967119021
+    Data4: 645408961
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1520425974946657364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,13 +1170,15 @@ MonoBehaviour:
   - {fileID: 4309642416868023722}
   - {fileID: 7784490584134885889}
   - {fileID: -4993103217256234880}
+  - {fileID: -8677324266785559666}
+  - {fileID: -1618157387039446585}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5215099242572089818}
   StringsBanks:
   - {fileID: 6938906154865167498}
   cacheVersion: 131858
-  cacheTime: 639083162273373009
+  cacheTime: 639087402967948929
   SerializableEventsDict:
   - key: event:/Enviroment/Bamboo
     index: 0
@@ -1129,6 +1186,10 @@ MonoBehaviour:
     index: 1
   - key: event:/Staff/Fire(Torches)
     index: 2
+  - key: event:/Enviroment/Base_ambience
+    index: 3
+  - key: event:/Enviroment/TestingFalloff
+    index: 4
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1290,10 +1351,34 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639083162273373009
+  lastModified: 639087362728368116
   FileSizes:
   - Name: Desktop
     Value: 153088
+  Exists: 1
+--- !u!114 &1917269201583920449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Base_ambience/Wind Line
+  m_EditorClassIdentifier: 
+  Name: Wind Line
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2050112341
+    data2: 483181314
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &2318041829841267463
 MonoBehaviour:
@@ -1758,10 +1843,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639083137662856743
+  lastModified: 639087402967940732
   FileSizes:
   - Name: Desktop
-    Value: 170848
+    Value: 1119840
   Exists: 1
 --- !u!114 &5280104081415406296
 MonoBehaviour:
@@ -1883,10 +1968,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639083137662871635
+  lastModified: 639087402967948929
   FileSizes:
   - Name: Desktop
-    Value: 960
+    Value: 1110
   Exists: 1
 --- !u!114 &7649693801023001911
 MonoBehaviour:
