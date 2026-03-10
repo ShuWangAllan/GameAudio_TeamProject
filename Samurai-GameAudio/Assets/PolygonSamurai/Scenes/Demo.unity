@@ -79114,6 +79114,7 @@ GameObject:
   - component: {fileID: 1111923052}
   - component: {fileID: 1111923051}
   - component: {fileID: 1111923050}
+  - component: {fileID: 1111923053}
   m_Layer: 0
   m_Name: Press E to Pick Up
   m_TagString: Untagged
@@ -79203,6 +79204,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 307104439}
   m_LocalEulerAnglesHint: {x: 0, y: 159.557, z: 0}
+--- !u!114 &1111923053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111923049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1069885190
+      Data2: 1201074671
+      Data3: -1934967640
+      Data4: -654352133
+    Path: event:/Weapons/Sword pick up
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1112232348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109259,7 +109291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caef8c864412549788305389564578af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCanPickupSword: 0
+  playerCanPickupSword: 1
 --- !u!1001 &1522409337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133924,6 +133956,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emperorsSword: {fileID: 1932719915}
   emperorsSwordEnd: {fileID: 349522197}
+  SwordPickUp:
+    Guid:
+      Data1: -1069885190
+      Data2: 1201074671
+      Data3: -1934967640
+      Data4: -654352133
+    Path: event:/Weapons/Sword pick up
   pickupTrigger: {fileID: 1521930939}
   pickupUI: {fileID: 1111923049}
   giveUI: {fileID: 221652104}
@@ -150190,7 +150229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112492303}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.011447118, y: -0, z: -0, w: 0.9999345}
+  m_LocalRotation: {x: -0.011447172, y: -0, z: -0, w: 0.9999345}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

@@ -208,6 +208,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &-8157028820128146581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/LV_Bank.bank
+  m_EditorClassIdentifier: 
+  Path: ../GameAudioAssets/FModLib/Build/Desktop/LV_Bank.bank
+  Name: LV_Bank
+  StudioPath: bank:/LV_Bank
+  lastModified: 639087375726240944
+  FileSizes:
+  - Name: Desktop
+    Value: 11136
+  Exists: 1
 --- !u!114 &-7886614670222625218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,17 +1131,20 @@ MonoBehaviour:
   - {fileID: 6938906154865167498}
   - {fileID: 5215099242572089818}
   - {fileID: 1834956772298290810}
+  - {fileID: -8157028820128146581}
   EditorEvents:
   - {fileID: 4309642416868023722}
   - {fileID: 7784490584134885889}
   - {fileID: -4993103217256234880}
+  - {fileID: 1951201068871906720}
+  - {fileID: 5856847398247264436}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5215099242572089818}
   StringsBanks:
   - {fileID: 6938906154865167498}
   cacheVersion: 131858
-  cacheTime: 639083162273373009
+  cacheTime: 639087375726240944
   SerializableEventsDict:
   - key: event:/Enviroment/Bamboo
     index: 0
@@ -1290,11 +1313,38 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639083162273373009
+  lastModified: 639087369859251754
   FileSizes:
   - Name: Desktop
     Value: 153088
   Exists: 1
+--- !u!114 &1951201068871906720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Sword Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Sword Collect
+  Guid:
+    Data1: 128271073
+    Data2: 1120110537
+    Data3: 1345625515
+    Data4: 1027853728
+  Banks:
+  - {fileID: -8157028820128146581}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1035
 --- !u!114 &2318041829841267463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1758,10 +1808,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639083137662856743
+  lastModified: 639087369857570942
   FileSizes:
   - Name: Desktop
-    Value: 170848
+    Value: 170784
   Exists: 1
 --- !u!114 &5280104081415406296
 MonoBehaviour:
@@ -1817,6 +1867,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1859
+--- !u!114 &5856847398247264436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Sword pick up
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Sword pick up
+  Guid:
+    Data1: -1069885190
+    Data2: 1201074671
+    Data3: -1934967640
+    Data4: -654352133
+  Banks:
+  - {fileID: -8157028820128146581}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1035
 --- !u!114 &6077929919284623250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1883,10 +1960,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639083137662871635
+  lastModified: 639087369857575482
   FileSizes:
   - Name: Desktop
-    Value: 960
+    Value: 1100
   Exists: 1
 --- !u!114 &7649693801023001911
 MonoBehaviour:
