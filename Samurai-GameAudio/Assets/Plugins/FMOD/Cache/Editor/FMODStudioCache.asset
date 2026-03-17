@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639087422059076962
+  lastModified: 639093620410772069
   FileSizes:
   - Name: Desktop
-    Value: 178176
+    Value: 212672
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -124,13 +124,15 @@ MonoBehaviour:
   - {fileID: -8429858135141806203}
   - {fileID: -7913031784119413748}
   - {fileID: 5804095428117742922}
+  - {fileID: 2888492401222913939}
+  - {fileID: 8800789230125222967}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5675764331691353747}
   StringsBanks:
   - {fileID: 9199697415664915088}
   cacheVersion: 131858
-  cacheTime: 639087422059087752
+  cacheTime: 639093620410787690
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -144,6 +146,10 @@ MonoBehaviour:
     index: 4
   - key: event:/Enviroment/SYC_WalkingByLotus
     index: 5
+  - key: event:/NPC/SYC_leekQuestEndNarration
+    index: 6
+  - key: event:/NPC/SYC_leekQuestBeginNarration
+    index: 7
 --- !u!114 &2003538473837416308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +170,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 153088
   Exists: 1
+--- !u!114 &2888492401222913939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_leekQuestEndNarration
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_leekQuestEndNarration
+  Guid:
+    Data1: -1488786907
+    Data2: 1137428712
+    Data3: 1488631448
+    Data4: -567869077
+  Banks:
+  - {fileID: -5675764331691353747}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4284565108791466399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +278,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8800789230125222967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_leekQuestBeginNarration
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_leekQuestBeginNarration
+  Guid:
+    Data1: 363998968
+    Data2: 1186393327
+    Data3: 1535444113
+    Data4: 505256310
+  Banks:
+  - {fileID: -5675764331691353747}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &9199697415664915088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,8 +320,8 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639087422059087752
+  lastModified: 639093620410787690
   FileSizes:
   - Name: Desktop
-    Value: 1102
+    Value: 1220
   Exists: 1

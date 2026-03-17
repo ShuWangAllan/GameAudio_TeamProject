@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 
 public class TheLeekQuest : MonoBehaviour
@@ -13,11 +15,17 @@ public class TheLeekQuest : MonoBehaviour
     public GameObject pressToPickUpUI;
     public GameObject pressToGiveUI;
     public GameObject leekUIImage;
+    public GameObject QuestBeginNarrationUI;
+    public GameObject QuestEndNarrationUI;
     [Header("Items")]
     public GameObject leekToCollect;
     public GameObject leekToGive;
     public bool questStarted;
     bool doesPlayerHaveLeek;
+    public EventReference QuestStartNpcNarrationAudioEvent;
+    public EventReference QuestEndNpcNarrationAudioEvent;
+    public Vector3 ReekTraderPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +35,8 @@ public class TheLeekQuest : MonoBehaviour
         pressToTalkUI.SetActive(false);
         leekToGive.SetActive(false);
         leekUIImage.SetActive(false);
+        QuestBeginNarrationUI.SetActive(false);
+        QuestEndNarrationUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -45,7 +55,8 @@ public class TheLeekQuest : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 //Add your conversation here
-
+                RuntimeManager.PlayOneShot(QuestStartNpcNarrationAudioEvent, ReekTraderPos);
+                QuestBeginNarrationUI.SetActive(true);
                 questStarted = true;
                 pressToTalkUI.SetActive(false);
             }
@@ -64,8 +75,6 @@ public class TheLeekQuest : MonoBehaviour
                     Destroy(leekToCollect);
                     doesPlayerHaveLeek = true;
                     leekUIImage.SetActive(true);
-
-
                 }
             }
         }
@@ -77,13 +86,17 @@ public class TheLeekQuest : MonoBehaviour
             pressToGiveUI.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
+                RuntimeManager.PlayOneShot(QuestEndNpcNarrationAudioEvent, ReekTraderPos);
                 doesPlayerHaveLeek = false;
                 pressToGiveUI.SetActive(false);
                 leekToGive.SetActive(true);
                 leekUIImage.SetActive(false);
+                QuestBeginNarrationUI.SetActive(false);
+                QuestEndNarrationUI.SetActive(true);
             }
         }
     }
 
 
 }
+

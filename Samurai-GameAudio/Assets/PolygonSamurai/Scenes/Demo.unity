@@ -42850,6 +42850,106 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 452314, guid: 270471e1edb500e4f99877d8ea3e5279, type: 3}
   m_PrefabInstance: {fileID: 587932087}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &589164661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589164662}
+  - component: {fileID: 589164664}
+  - component: {fileID: 589164663}
+  m_Layer: 0
+  m_Name: Leek Quest End Narration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &589164662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589164661}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.6601908, z: -0, w: 0.7510979}
+  m_LocalPosition: {x: -224.92, y: 203.13, z: 292.93}
+  m_LocalScale: {x: 0.1397286, y: 0.1397286, z: 0.1397286}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1884023596}
+  m_LocalEulerAnglesHint: {x: 0, y: 82.629, z: 0}
+--- !u!114 &589164663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589164661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40467f5d90d16403d8e75be4c40af638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &589164664
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589164661}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: f7b52961214223e48af61c0bc65f4449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 20, y: 10}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &589356920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73610,6 +73710,106 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 496962, guid: bf927057f20014040b17e9dcc8dd8ecb, type: 3}
   m_PrefabInstance: {fileID: 1017270130}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1018279314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1018279315}
+  - component: {fileID: 1018279317}
+  - component: {fileID: 1018279316}
+  m_Layer: 0
+  m_Name: Leek Quest Start Narration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1018279315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018279314}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.6601908, z: -0, w: 0.7510979}
+  m_LocalPosition: {x: -224.92, y: 203.13, z: 292.93}
+  m_LocalScale: {x: 0.1397286, y: 0.1397286, z: 0.1397286}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1884023596}
+  m_LocalEulerAnglesHint: {x: 0, y: 82.629, z: 0}
+--- !u!114 &1018279316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018279314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40467f5d90d16403d8e75be4c40af638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &1018279317
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018279314}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a7bce76a52df82242b9eb66eb33e8d89, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 20, y: 10}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1018673715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -134343,6 +134543,8 @@ Transform:
   - {fileID: 2084742950}
   - {fileID: 287834424}
   - {fileID: 1362671697}
+  - {fileID: 1018279315}
+  - {fileID: 589164662}
   - {fileID: 2137000413}
   - {fileID: 1971139672}
   - {fileID: 1126287213}
@@ -134366,9 +134568,26 @@ MonoBehaviour:
   pressToPickUpUI: {fileID: 1971139671}
   pressToGiveUI: {fileID: 2137000412}
   leekUIImage: {fileID: 1272053619}
+  QuestBeginNarrationUI: {fileID: 1018279314}
+  QuestEndNarrationUI: {fileID: 589164661}
   leekToCollect: {fileID: 2084742951}
   leekToGive: {fileID: 1126287214}
   questStarted: 0
+  QuestStartNpcNarrationAudioEvent:
+    Guid:
+      Data1: 363998968
+      Data2: 1186393327
+      Data3: 1535444113
+      Data4: 505256310
+    Path: event:/NPC/SYC_leekQuestBeginNarration
+  QuestEndNpcNarrationAudioEvent:
+    Guid:
+      Data1: -1488786907
+      Data2: 1137428712
+      Data3: 1488631448
+      Data4: -567869077
+    Path: event:/NPC/SYC_leekQuestEndNarration
+  ReekTraderPos: {x: 50, y: 33, z: -20}
 --- !u!1001 &1885336206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150190,7 +150409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112492303}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.011448199, y: -0, z: -0, w: 0.9999345}
+  m_LocalRotation: {x: -0.011448329, y: -0, z: -0, w: 0.9999345}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
