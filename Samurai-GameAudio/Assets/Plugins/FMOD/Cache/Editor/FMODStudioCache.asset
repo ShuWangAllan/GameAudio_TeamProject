@@ -518,6 +518,36 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4851250355737712703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Name: Footsteps
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2804399968
+    data2: 3761205216
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Concreate
+  - Dirt
+  - Grass
+  - Gravel
+  - Water
+  - Wood
+  Exists: 1
 --- !u!114 &-4660698009711888936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,6 +576,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 999
+--- !u!114 &-4319320850640718162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps/Footsteps
+  Guid:
+    Data1: 531873983
+    Data2: 1201300939
+    Data3: -9742660
+    Data4: -331048516
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4851250355737712703}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4249616080426678368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1172,13 +1230,14 @@ MonoBehaviour:
   - {fileID: -4993103217256234880}
   - {fileID: -8677324266785559666}
   - {fileID: -1618157387039446585}
+  - {fileID: -4319320850640718162}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5215099242572089818}
   StringsBanks:
   - {fileID: 6938906154865167498}
   cacheVersion: 131858
-  cacheTime: 639087402967948929
+  cacheTime: 639095410883614645
   SerializableEventsDict:
   - key: event:/Enviroment/Bamboo
     index: 0
@@ -1190,6 +1249,8 @@ MonoBehaviour:
     index: 3
   - key: event:/Enviroment/TestingFalloff
     index: 4
+  - key: event:/Character/Footsteps/Footsteps
+    index: 5
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,7 +1412,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639087362728368116
+  lastModified: 639095359267255867
   FileSizes:
   - Name: Desktop
     Value: 153088
@@ -1843,10 +1904,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639087402967940732
+  lastModified: 639095410883604602
   FileSizes:
   - Name: Desktop
-    Value: 1119840
+    Value: 1154144
   Exists: 1
 --- !u!114 &5280104081415406296
 MonoBehaviour:
@@ -1968,10 +2029,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639087402967948929
+  lastModified: 639095410883614645
   FileSizes:
   - Name: Desktop
-    Value: 1110
+    Value: 1222
   Exists: 1
 --- !u!114 &7649693801023001911
 MonoBehaviour:
