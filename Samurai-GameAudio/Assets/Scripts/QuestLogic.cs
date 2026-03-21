@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 
 public class QuestLogic : MonoBehaviour
 {
     public GameObject emperorsSword;
     public GameObject emperorsSwordEnd;
-
+    public EventReference SwordPickUp;
     public GameObject pickupTrigger;
 
     public GameObject pickupUI;
@@ -47,6 +48,7 @@ public class QuestLogic : MonoBehaviour
     {
         if (pickupTrigger.GetComponent<SwordPickup>().playerCanPickupSword == true && Input.GetKeyDown(KeyCode.E))
         {
+            RuntimeManager.PlayOneShot(SwordPickUp, transform.position);
             Destroy(emperorsSword);
             playerHasSword = true;
             pickupUI.SetActive(false);

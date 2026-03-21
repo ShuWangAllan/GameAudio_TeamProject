@@ -637,6 +637,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Fire(Torches)
+  - LV_Bank
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
