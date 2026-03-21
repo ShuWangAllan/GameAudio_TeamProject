@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 
 public class TheLeekQuest : MonoBehaviour
@@ -13,11 +15,19 @@ public class TheLeekQuest : MonoBehaviour
     public GameObject pressToPickUpUI;
     public GameObject pressToGiveUI;
     public GameObject leekUIImage;
+    public GameObject QuestBeginNarrationUI;
+    public GameObject QuestEndNarrationUI;
     [Header("Items")]
     public GameObject leekToCollect;
     public GameObject leekToGive;
     public bool questStarted;
     bool doesPlayerHaveLeek;
+    private bool questEnd = false;
+    public EventReference QuestStartNpcNarrationAudioEvent;
+    public EventReference QuestEndNpcNarrationAudioEvent;
+    public Vector3 ReekTraderPos;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +37,9 @@ public class TheLeekQuest : MonoBehaviour
         pressToTalkUI.SetActive(false);
         leekToGive.SetActive(false);
         leekUIImage.SetActive(false);
+        QuestBeginNarrationUI.SetActive(false);
+        QuestEndNarrationUI.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -39,51 +52,97 @@ public class TheLeekQuest : MonoBehaviour
 
     void MarketSellerStart()
     {
-        if (marketSellerTrigger.GetComponent<MarketSellerTrigger>().playerIsInMarketSellerTrigger == true && questStarted == false)
+        if (questStarted == false)
         {
-            pressToTalkUI.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
+            if (marketSellerTrigger.GetComponent<MarketSellerTrigger>().playerIsInMarketSellerTrigger == true)
             {
-                //Add your conversation here
-
-                questStarted = true;
+                pressToTalkUI.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    //Add your conversation here
+                    RuntimeManager.PlayOneShot(QuestStartNpcNarrationAudioEvent, ReekTraderPos);
+                    QuestBeginNarrationUI.SetActive(true);
+                    questStarted = true;
+                    pressToTalkUI.SetActive(false);
+                }
+            }
+            else
+            {
                 pressToTalkUI.SetActive(false);
+            }
+        }
+        if (questStarted && doesPlayerHaveLeek == false && !questEnd)
+        {
+            if (marketSellerTrigger.GetComponent<MarketSellerTrigger>().playerIsInMarketSellerTrigger == true)
+            {
+                QuestBeginNarrationUI.SetActive(true);
+            }
+            else
+            {
+                QuestBeginNarrationUI.SetActive(false);
             }
         }
     }
     void LeekPickup()
     {
-        if (questStarted == true && leekTrigger.GetComponent<LeekPickup>().playerIsInLeekTrigger == true)
+        if (questStarted == true)
         {
             if (doesPlayerHaveLeek == false)
             {
-                pressToPickUpUI.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.E))
+                if (leekTrigger.GetComponent<LeekPickup>().playerIsInLeekTrigger == true)
+                {
+                    pressToPickUpUI.SetActive(true);
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        pressToPickUpUI.SetActive(false);
+                        Destroy(leekToCollect);
+                        doesPlayerHaveLeek = true;
+                        leekUIImage.SetActive(true);
+                        QuestBeginNarrationUI.SetActive(false);
+                    }
+                }
+                else
                 {
                     pressToPickUpUI.SetActive(false);
-                    Destroy(leekToCollect);
-                    doesPlayerHaveLeek = true;
-                    leekUIImage.SetActive(true);
-
-
                 }
             }
         }
     }
     void MarketSellerEnd()
     {
-        if (doesPlayerHaveLeek == true && marketSellerTrigger.GetComponent<MarketSellerTrigger>().playerIsInMarketSellerTrigger == true)
+        if (doesPlayerHaveLeek == true)
         {
-            pressToGiveUI.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
+            if (marketSellerTrigger.GetComponent<MarketSellerTrigger>().playerIsInMarketSellerTrigger == true)
             {
-                doesPlayerHaveLeek = false;
+                pressToGiveUI.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    RuntimeManager.PlayOneShot(QuestEndNpcNarrationAudioEvent, ReekTraderPos);
+                    doesPlayerHaveLeek = false;
+                    pressToGiveUI.SetActive(false);
+                    leekToGive.SetActive(true);
+                    leekUIImage.SetActive(false);
+                    questEnd = true;
+                }
+            }
+            else
+            {
                 pressToGiveUI.SetActive(false);
-                leekToGive.SetActive(true);
-                leekUIImage.SetActive(false);
+            }
+        }
+        else if (questEnd)
+        {
+            if (marketSellerTrigger.GetComponent<MarketSellerTrigger>().playerIsInMarketSellerTrigger == true)
+            {
+                QuestEndNarrationUI.SetActive(true);
+            }
+            else
+            {
+                QuestEndNarrationUI.SetActive(false);
             }
         }
     }
 
 
 }
+
