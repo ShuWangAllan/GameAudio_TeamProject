@@ -2,9 +2,15 @@
 # Root .gitignore for:
 # - GameAudioAssets/      -> FMOD Studio project
 # - Samurai-GameAudio/    -> Unity project
-# Strategy B:
+#
+# Strategy:
 # - COMMIT FMOD Banks so Unity can run audio after clone
+# - IGNORE Unity/FMOD local cache, temp, IDE, and generated files
 # ============================================================
+
+############################################################
+# OS files
+############################################################
 
 ### macOS ###
 .DS_Store
@@ -29,6 +35,10 @@ Temporary Items
 ### Windows ###
 Thumbs.db
 Desktop.ini
+
+############################################################
+# Archive packages (usually not source files)
+############################################################
 *.rar
 *.zip
 *.7z
@@ -47,6 +57,8 @@ Desktop.ini
 /Samurai-GameAudio/[Uu]ser[Ss]ettings/
 /Samurai-GameAudio/[Mm]emoryCaptures/
 /Samurai-GameAudio/[Rr]ecordings/
+/Samurai-GameAudio/[Cc]aptures/
+/Samurai-GameAudio/[Aa]rtifacts/
 
 # Optional Unity generated folders
 /Samurai-GameAudio/[Bb]ee/
@@ -98,12 +110,19 @@ Desktop.ini
 /Samurai-GameAudio/[Aa]ssets/[Ss]treamingAssets/aa.meta
 /Samurai-GameAudio/[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Optional: ignore JetBrains Rider plugin auto-generated files
+# Optional JetBrains Rider / Asset Store generated files
 /Samurai-GameAudio/[Aa]ssets/Plugins/Editor/JetBrains*
+/Samurai-GameAudio/[Aa]ssets/AssetStoreTools*
 
-# Keep FMOD Unity plugin text normalization if needed
-/Samurai-GameAudio/Assets/Plugins/FMOD/**/*.bundle text eol=lf
-/Samurai-GameAudio/Assets/Plugins/FMOD/**/Info.plist text eol=lf
+############################################################
+# FMOD Unity plugin cache inside Unity project
+# These files are local/editor cache and should NOT be versioned
+# This section helps prevent repeated merge conflicts like:
+# Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+############################################################
+
+/Samurai-GameAudio/Assets/Plugins/FMOD/Cache/
+/Samurai-GameAudio/Assets/Plugins/FMOD/Cache.meta
 
 ############################################################
 # FMOD Studio project: GameAudioAssets
@@ -117,8 +136,13 @@ Desktop.ini
 /GameAudioAssets/**/.fmod/
 /GameAudioAssets/**/.fmodstudio/
 /GameAudioAssets/**/.fmodstudio-cache/
-
 /GameAudioAssets/**/*.bak
 /GameAudioAssets/**/*.backup
 /GameAudioAssets/**/*.autosave
 /GameAudioAssets/**/*.tmp
+
+############################################################
+# IMPORTANT:
+# FMOD Banks are intentionally committed for team sync / Unity runtime
+# Do NOT ignore .bank files
+############################################################
