@@ -290,6 +290,36 @@ MonoBehaviour:
   - Intro
   - Main
   Exists: 1
+--- !u!114 &-7098503361874210501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Name: Footsteps
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2804399968
+    data2: 3761205216
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Concreate
+  - Dirt
+  - Grass
+  - Gravel
+  - Water
+  - Wood
+  Exists: 1
 --- !u!114 &-6943617790267620984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,36 +548,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-4851250355737712703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: 
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 2804399968
-    data2: 3761205216
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Concreate
-  - Dirt
-  - Grass
-  - Gravel
-  - Water
-  - Wood
-  Exists: 1
 --- !u!114 &-4660698009711888936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,6 +576,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 999
+--- !u!114 &-4434039867596193804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_leekQuestBeginNarration
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_leekQuestBeginNarration
+  Guid:
+    Data1: 363998968
+    Data2: 1186393327
+    Data3: 1535444113
+    Data4: 505256310
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4319320850640718162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,7 +627,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -4851250355737712703}
+  - {fileID: -7098503361874210501}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -984,6 +1011,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10598
+--- !u!114 &-1337387799818497582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/SYC_WalkingByLotus
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/SYC_WalkingByLotus
+  Guid:
+    Data1: 239737113
+    Data2: 1194859747
+    Data3: -994796142
+    Data4: -2115050346
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1089809691966030880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,6 +1094,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 917
+--- !u!114 &-941354258781065574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/SYC_WalkingByFlower
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/SYC_WalkingByFlower
+  Guid:
+    Data1: 1566634900
+    Data2: 1299731991
+    Data3: 1097184935
+    Data4: -163563578
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-939232917971904562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,6 +1189,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-294306939377577720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/SYC_WalkingByGrass
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/SYC_WalkingByGrass
+  Guid:
+    Data1: -950974338
+    Data2: 1278594110
+    Data3: 1724459143
+    Data4: 426084355
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-168052750983676050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,13 +1339,18 @@ MonoBehaviour:
   - {fileID: -8677324266785559666}
   - {fileID: -1618157387039446585}
   - {fileID: -4319320850640718162}
+  - {fileID: -1337387799818497582}
+  - {fileID: 9205849119266974428}
+  - {fileID: -294306939377577720}
+  - {fileID: -941354258781065574}
+  - {fileID: -4434039867596193804}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5215099242572089818}
   StringsBanks:
   - {fileID: 6938906154865167498}
   cacheVersion: 131858
-  cacheTime: 639095410883614645
+  cacheTime: 639099454900474624
   SerializableEventsDict:
   - key: event:/Enviroment/Bamboo
     index: 0
@@ -1251,6 +1364,16 @@ MonoBehaviour:
     index: 4
   - key: event:/Character/Footsteps/Footsteps
     index: 5
+  - key: event:/Enviroment/SYC_WalkingByLotus
+    index: 6
+  - key: event:/NPC/SYC_leekQuestEndNarration
+    index: 7
+  - key: event:/Enviroment/SYC_WalkingByGrass
+    index: 8
+  - key: event:/Enviroment/SYC_WalkingByFlower
+    index: 9
+  - key: event:/NPC/SYC_leekQuestBeginNarration
+    index: 10
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,7 +1535,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639095359267255867
+  lastModified: 639099441497784753
   FileSizes:
   - Name: Desktop
     Value: 153088
@@ -1904,10 +2027,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639095410883604602
+  lastModified: 639099454900466245
   FileSizes:
   - Name: Desktop
-    Value: 1154144
+    Value: 1195872
   Exists: 1
 --- !u!114 &5280104081415406296
 MonoBehaviour:
@@ -2029,10 +2152,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639095410883614645
+  lastModified: 639099454900474624
   FileSizes:
   - Name: Desktop
-    Value: 1222
+    Value: 1482
   Exists: 1
 --- !u!114 &7649693801023001911
 MonoBehaviour:
@@ -2183,3 +2306,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2182
+--- !u!114 &9205849119266974428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_leekQuestEndNarration
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_leekQuestEndNarration
+  Guid:
+    Data1: -1488786907
+    Data2: 1137428712
+    Data3: 1488631448
+    Data4: -567869077
+  Banks:
+  - {fileID: 5215099242572089818}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

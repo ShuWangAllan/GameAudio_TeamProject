@@ -45,12 +45,12 @@ public class PlayerSounds : MonoBehaviour
                 footsteps.setParameterByName("Footsteps", 0);
             else if (layer == LayerMask.NameToLayer("Dirt"))
                 footsteps.setParameterByName("Footsteps", 1);
+            else if (layer == LayerMask.NameToLayer("Water"))
+                footsteps.setParameterByName("Footsteps", 4);
             else if (layer == LayerMask.NameToLayer("Grass"))
                 footsteps.setParameterByName("Footsteps", 2);
             else if (layer == LayerMask.NameToLayer("Gravel"))
                 footsteps.setParameterByName("Footsteps", 3);
-            else if (layer == LayerMask.NameToLayer("Water"))
-                footsteps.setParameterByName("Footsteps", 4);
             else if (layer == LayerMask.NameToLayer("Wood"))
                 footsteps.setParameterByName("Footsteps", 5);
             else
