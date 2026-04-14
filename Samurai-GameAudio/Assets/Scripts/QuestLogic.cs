@@ -63,6 +63,7 @@ public class QuestLogic : MonoBehaviour
             questComplete = true;
             emperorsSwordEnd.SetActive(true);
             pickupUI.SetActive(false);
+            giveUI.SetActive(false);
             playerHasSword = false;
             pickupInventory.SetActive(false);
         }

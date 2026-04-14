@@ -1350,7 +1350,11 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 6938906154865167498}
   cacheVersion: 131858
+<<<<<<< Updated upstream
   cacheTime: 639105607147389120
+=======
+  cacheTime: 639117782769434552
+>>>>>>> Stashed changes
   SerializableEventsDict:
   - key: event:/Enviroment/Bamboo
     index: 0
@@ -1374,6 +1378,8 @@ MonoBehaviour:
     index: 9
   - key: event:/NPC/SYC_leekQuestBeginNarration
     index: 10
+  - key: event:/Weapons/Sword pick up
+    index: 11
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,7 +1541,11 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
+<<<<<<< Updated upstream
   lastModified: 639095359267255867
+=======
+  lastModified: 639117782703462039
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 153088
@@ -2027,7 +2037,11 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 639105607147324064
+=======
+  lastModified: 639117782769434552
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 1195872
@@ -2152,7 +2166,11 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 639105607147389120
+=======
+  lastModified: 639117782703586032
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 1482

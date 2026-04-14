@@ -68,6 +68,14 @@
 			<destination>{714ea34d-9163-4100-8352-fdf0e37c83fc}</destination>
 		</relationship>
 	</object>
+<<<<<<< Updated upstream
+=======
+	<object class="MultiSound" id="{165aafa2-3833-455e-abbd-0ec97de8b034}">
+		<relationship name="sounds">
+			<destination>{95afe0e7-7c3b-481d-96d7-70d445df1162}</destination>
+		</relationship>
+	</object>
+>>>>>>> Stashed changes
 	<object class="MixerBusEffectChain" id="{0c525367-d13e-436f-882f-3424286ec458}">
 		<relationship name="effects">
 			<destination>{4d0f555a-96ff-4d5b-bce6-cd03e721c9ab}</destination>
@@ -80,6 +88,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9772172c-a6d1-49cf-846f-25e43b009226}" />
+<<<<<<< Updated upstream
+=======
+	<object class="SingleSound" id="{95afe0e7-7c3b-481d-96d7-70d445df1162}">
+		<relationship name="audioFile">
+			<destination>{d0c40446-8d9e-4f63-9284-1b2432493a2a}</destination>
+		</relationship>
+	</object>
+>>>>>>> Stashed changes
 	<object class="MixerBusFader" id="{4d0f555a-96ff-4d5b-bce6-cd03e721c9ab}" />
 	<object class="MixerBusFader" id="{9c70a21c-f347-4938-b8b1-3486bafd55f8}" />
 </objects>
