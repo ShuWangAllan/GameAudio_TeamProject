@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{8c92f6e9-0e0a-46d0-a91d-e42ac1bfd987}">
+		<property name="assetPath">
+			<value>Footsteps/Concreate/STONE_JUMP-006.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.6869583333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c5c1b4af-78a4-41ef-9afd-3d6745bc62de}</destination>
+		</relationship>
+	</object>
+</objects>

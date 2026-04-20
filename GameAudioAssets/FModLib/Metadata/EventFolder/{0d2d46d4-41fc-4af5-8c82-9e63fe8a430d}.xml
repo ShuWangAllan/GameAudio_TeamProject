@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{0d2d46d4-41fc-4af5-8c82-9e63fe8a430d}">
+		<property name="name">
+			<value>amb_scatterlayer</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9333ed45-2cb7-4165-b43c-2eceeae93084}</destination>
+		</relationship>
+	</object>
+</objects>

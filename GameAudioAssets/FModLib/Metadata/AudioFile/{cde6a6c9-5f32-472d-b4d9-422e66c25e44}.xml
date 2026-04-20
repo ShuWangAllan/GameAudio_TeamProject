@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{cde6a6c9-5f32-472d-b4d9-422e66c25e44}">
+		<property name="assetPath">
+			<value>Footsteps/Gravel/GRAVEL_JUMP-004.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.5483124999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c5c1b4af-78a4-41ef-9afd-3d6745bc62de}</destination>
+		</relationship>
+	</object>
+</objects>

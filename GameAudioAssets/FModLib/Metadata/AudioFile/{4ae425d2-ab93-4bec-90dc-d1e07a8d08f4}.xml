@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{4ae425d2-ab93-4bec-90dc-d1e07a8d08f4}">
+		<property name="assetPath">
+			<value>Footsteps/Concreate/STONE_FOOTSTEP-009.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.4600208333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c5c1b4af-78a4-41ef-9afd-3d6745bc62de}</destination>
+		</relationship>
+	</object>
+</objects>

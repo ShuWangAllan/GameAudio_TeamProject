@@ -573,7 +573,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639120213886830098
+  lastModified: 639123148327544437
   FileSizes:
   - Name: Desktop
     Value: 1534
@@ -613,10 +613,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639120213886810092
+  lastModified: 639123148327518115
   FileSizes:
   - Name: Desktop
-    Value: 1205344
+    Value: 1841056
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -1524,7 +1524,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639120213886830098
+  cacheTime: 639123148327544437
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -1659,7 +1659,7 @@ MonoBehaviour:
   Name: Footsteps
   StudioPath: 
   Min: 0
-  Max: 5
+  Max: 11
   Default: 0
   ID:
     data1: 2804399968
@@ -1673,6 +1673,12 @@ MonoBehaviour:
   - Gravel
   - Water
   - Wood
+  - Concreat_Jump
+  - Dirt_Jump
+  - Grass_Jump
+  - Gravel_Jump
+  - Water_Jump
+  - Wood_Jump
   Exists: 1
 --- !u!114 &1114962804502197425
 MonoBehaviour:
@@ -1922,7 +1928,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639120195116547144
+  lastModified: 639123032278284854
   FileSizes:
   - Name: Desktop
     Value: 153088
