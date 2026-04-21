@@ -573,10 +573,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639120213886830098
+  lastModified: 639123721616531923
   FileSizes:
   - Name: Desktop
-    Value: 1534
+    Value: 1590
   Exists: 1
 --- !u!114 &-5325625988281323392
 MonoBehaviour:
@@ -613,10 +613,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639120213886810092
+  lastModified: 639123721616524283
   FileSizes:
   - Name: Desktop
-    Value: 1205344
+    Value: 1216544
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -1518,13 +1518,14 @@ MonoBehaviour:
   - {fileID: 2255189703601006783}
   - {fileID: -7505645938731041838}
   - {fileID: 2650727475042654665}
+  - {fileID: 1184622029593307294}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5276068467445444158}
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639120213886830098
+  cacheTime: 639123721616531923
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -1550,6 +1551,8 @@ MonoBehaviour:
     index: 10
   - key: event:/Weapons/Sword pick up
     index: 11
+  - key: event:/NPC/Yellow Samurai
+    index: 12
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,6 +1704,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1184622029593307294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/Yellow Samurai
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/Yellow Samurai
+  Guid:
+    Data1: -1856253145
+    Data2: 1270676049
+    Data3: 1214340011
+    Data4: 446537463
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4974
 --- !u!114 &1209167577234408106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1922,7 +1952,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639120195116547144
+  lastModified: 639123715552561652
   FileSizes:
   - Name: Desktop
     Value: 153088
