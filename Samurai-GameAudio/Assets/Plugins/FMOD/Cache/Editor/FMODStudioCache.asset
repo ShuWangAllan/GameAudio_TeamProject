@@ -371,6 +371,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7396251467919408202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Music/TempleSong
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Music/TempleSong
+  Guid:
+    Data1: 383975292
+    Data2: 1323070676
+    Data3: 862127292
+    Data4: 145407708
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60359
 --- !u!114 &-7098503361874210501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,6 +501,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 54339
+--- !u!114 &-6233916927266521441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Music/VillageSong
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Music/VillageSong
+  Guid:
+    Data1: -1034139930
+    Data2: 1311738572
+    Data3: 556745604
+    Data4: -1365575588
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 80000
 --- !u!114 &-6223599998374947902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,10 +627,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639120213886830098
+  lastModified: 639123710472388173
   FileSizes:
   - Name: Desktop
-    Value: 1534
+    Value: 1838
   Exists: 1
 --- !u!114 &-5325625988281323392
 MonoBehaviour:
@@ -613,10 +667,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639120213886810092
+  lastModified: 639123710472364735
   FileSizes:
   - Name: Desktop
-    Value: 1205344
+    Value: 4679936
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -752,6 +806,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4338226248277998467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/fire 2
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/fire 2
+  Guid:
+    Data1: -1971367707
+    Data2: 1106154737
+    Data3: 1835443131
+    Data4: 603141324
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 9.2
+  Length: 12076
 --- !u!114 &-4319320850640718162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,6 +1063,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 222624
   Exists: 1
+--- !u!114 &-2470571192001678801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Music/Shamisen
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Music/Shamisen
+  Guid:
+    Data1: -1657324070
+    Data2: 1303513219
+    Data3: -1253503872
+    Data4: -1274358897
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 4
+  Length: 0
 --- !u!114 &-2181289596980581600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,6 +1319,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1244476659355644482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/fire
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/fire
+  Guid:
+    Data1: 1852338809
+    Data2: 1074601284
+    Data3: 529604277
+    Data4: -615712998
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11576
 --- !u!114 &-1089809691966030880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,13 +1653,20 @@ MonoBehaviour:
   - {fileID: 2255189703601006783}
   - {fileID: -7505645938731041838}
   - {fileID: 2650727475042654665}
+  - {fileID: 828081167039740729}
+  - {fileID: -6233916927266521441}
+  - {fileID: -1244476659355644482}
+  - {fileID: -4338226248277998467}
+  - {fileID: -7396251467919408202}
+  - {fileID: -2470571192001678801}
+  - {fileID: 1383723235316178999}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5276068467445444158}
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639120213886830098
+  cacheTime: 639123710472388173
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -1550,6 +1692,20 @@ MonoBehaviour:
     index: 10
   - key: event:/Weapons/Sword pick up
     index: 11
+  - key: event:/Enviroment/Music/Mystical pink pollen
+    index: 12
+  - key: event:/Enviroment/Music/VillageSong
+    index: 13
+  - key: event:/Enviroment/fire
+    index: 14
+  - key: event:/Enviroment/fire 2
+    index: 15
+  - key: event:/Enviroment/Music/TempleSong
+    index: 16
+  - key: event:/Enviroment/Music/Shamisen
+    index: 17
+  - key: event:/Enviroment/Music/Gong
+    index: 18
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1644,6 +1800,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 66560
   Exists: 1
+--- !u!114 &828081167039740729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Music/Mystical pink pollen
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Music/Mystical pink pollen
+  Guid:
+    Data1: 878873859
+    Data2: 1289668690
+    Data3: 1367847063
+    Data4: 441244943
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 6.4
+  Length: 120000
 --- !u!114 &972893735732541663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1779,6 +1962,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1383723235316178999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Music/Gong
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Music/Gong
+  Guid:
+    Data1: 137705
+    Data2: 1189863230
+    Data3: -2106886977
+    Data4: -1688459499
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 5.4
+  Length: 0
 --- !u!114 &1738875340129623038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1922,7 +2132,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639120195116547144
+  lastModified: 639123671837694256
   FileSizes:
   - Name: Desktop
     Value: 153088
