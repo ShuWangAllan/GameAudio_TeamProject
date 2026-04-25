@@ -573,10 +573,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639123148327544437
+  lastModified: 639127606600653647
   FileSizes:
   - Name: Desktop
-    Value: 1534
+    Value: 1606
   Exists: 1
 --- !u!114 &-5325625988281323392
 MonoBehaviour:
@@ -613,10 +613,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639123148327518115
+  lastModified: 639127606600628541
   FileSizes:
   - Name: Desktop
-    Value: 1841056
+    Value: 1553632
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -722,6 +722,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: 972893735732541663}
+  - {fileID: -2557619135725599870}
+  - {fileID: 8610665354052164083}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -958,6 +960,30 @@ MonoBehaviour:
   ID:
     data1: 1494634397
     data2: 1834780554
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2557619135725599870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 2395107215
+    data2: 3497678857
   Type: 0
   IsGlobal: 0
   Labels: []
@@ -1524,7 +1550,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639123148327544437
+  cacheTime: 639127606600653647
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -1659,7 +1685,7 @@ MonoBehaviour:
   Name: Footsteps
   StudioPath: 
   Min: 0
-  Max: 11
+  Max: 5
   Default: 0
   ID:
     data1: 2804399968
@@ -1673,12 +1699,6 @@ MonoBehaviour:
   - Gravel
   - Water
   - Wood
-  - Concreat_Jump
-  - Dirt_Jump
-  - Grass_Jump
-  - Gravel_Jump
-  - Water_Jump
-  - Wood_Jump
   Exists: 1
 --- !u!114 &1114962804502197425
 MonoBehaviour:
@@ -2706,6 +2726,30 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 52416
+  Exists: 1
+--- !u!114 &8610665354052164083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Crouch
+  m_EditorClassIdentifier: 
+  Name: Crouch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2353076655
+    data2: 1275663387
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &8638767966579842198
 MonoBehaviour:

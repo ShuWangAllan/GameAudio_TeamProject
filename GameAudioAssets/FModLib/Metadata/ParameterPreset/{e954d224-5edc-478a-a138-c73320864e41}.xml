@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{e954d224-5edc-478a-a138-c73320864e41}">
+		<property name="name">
+			<value>Crouch</value>
+		</property>
+		<relationship name="folder">
+			<destination>{00e84b66-faa0-4423-9bf7-35cdd764a060}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{661b561a-d5fe-4232-9756-c7ee61b27270}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{661b561a-d5fe-4232-9756-c7ee61b27270}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

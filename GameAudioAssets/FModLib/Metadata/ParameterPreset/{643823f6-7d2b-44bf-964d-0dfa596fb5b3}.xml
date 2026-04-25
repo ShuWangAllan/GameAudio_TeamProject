@@ -16,7 +16,7 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>12</value>
+			<value>6</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>Concreate</value>
@@ -25,12 +25,6 @@
 			<value>Gravel</value>
 			<value>Water</value>
 			<value>Wood</value>
-			<value>Concreat_Jump</value>
-			<value>Dirt_Jump</value>
-			<value>Grass_Jump</value>
-			<value>Gravel_Jump</value>
-			<value>Water_Jump</value>
-			<value>Wood_Jump</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>
