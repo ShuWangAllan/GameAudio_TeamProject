@@ -16,6 +16,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         [SerializeField] float m_AnimSpeedMultiplier = 1f;
         [SerializeField] float m_GroundCheckDistance = 0.1f;
 
+        [Header("Audio Movement Values")]
+        [SerializeField] private float walkSpeedForFullAudio = 4.5f;
+        [SerializeField] private float crouchSpeedForFullAudio = 1.8f;
+        [SerializeField] private float audioSpeedSmoothing = 6f;
+        [SerializeField] private float audioStopSmoothing = 10f;
+        [SerializeField] private float audioSpeedDeadZone = 0.03f;
+
         Rigidbody m_Rigidbody;
         Animator m_Animator;
         bool m_IsGrounded;
@@ -29,11 +36,20 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         CapsuleCollider m_Capsule;
         bool m_Crouching;
 
+        private float m_AudioSpeed;
+        private float m_AudioCrouchSpeed;
+
         public bool IsGrounded => m_IsGrounded;
         public bool IsCrouching => m_Crouching;
         public float ForwardAmount => m_ForwardAmount;
         public float TurnAmount => m_TurnAmount;
+
+        // This is still useful for animation/old systems, but NOT ideal for audio speed.
         public float MovementAmount => Mathf.Max(Mathf.Abs(m_ForwardAmount), Mathf.Abs(m_TurnAmount));
+
+        // Use these for FMOD.
+        public float AudioSpeed => m_AudioSpeed;
+        public float AudioCrouchSpeed => m_AudioCrouchSpeed;
 
         void Start()
         {
@@ -43,13 +59,18 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_CapsuleHeight = m_Capsule.height;
             m_CapsuleCenter = m_Capsule.center;
 
-            m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+            m_Rigidbody.constraints =
+                RigidbodyConstraints.FreezeRotationX |
+                RigidbodyConstraints.FreezeRotationY |
+                RigidbodyConstraints.FreezeRotationZ;
+
             m_OrigGroundCheckDistance = m_GroundCheckDistance;
         }
 
         public void Move(Vector3 move, bool crouch, bool jump)
         {
-            if (move.magnitude > 1f) move.Normalize();
+            if (move.magnitude > 1f)
+                move.Normalize();
 
             move = transform.InverseTransformDirection(move);
 
@@ -75,13 +96,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             PreventStandingInLowHeadroom();
 
             UpdateAnimator(move);
+            UpdateAudioMovementValues();
         }
 
         void ScaleCapsuleForCrouching(bool crouch)
         {
             if (m_IsGrounded && crouch)
             {
-                if (m_Crouching) return;
+                if (m_Crouching)
+                    return;
 
                 m_Capsule.height = m_Capsule.height / 2f;
                 m_Capsule.center = m_Capsule.center / 2f;
@@ -89,10 +112,19 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
             else
             {
-                Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
+                Ray crouchRay = new Ray(
+                    m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half,
+                    Vector3.up
+                );
+
                 float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
 
-                if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
+                if (Physics.SphereCast(
+                        crouchRay,
+                        m_Capsule.radius * k_Half,
+                        crouchRayLength,
+                        Physics.AllLayers,
+                        QueryTriggerInteraction.Ignore))
                 {
                     m_Crouching = true;
                     return;
@@ -108,10 +140,19 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (!m_Crouching)
             {
-                Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
+                Ray crouchRay = new Ray(
+                    m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half,
+                    Vector3.up
+                );
+
                 float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
 
-                if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
+                if (Physics.SphereCast(
+                        crouchRay,
+                        m_Capsule.radius * k_Half,
+                        crouchRayLength,
+                        Physics.AllLayers,
+                        QueryTriggerInteraction.Ignore))
                 {
                     m_Crouching = true;
                 }
@@ -152,12 +193,56 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
         }
 
+        void UpdateAudioMovementValues()
+        {
+            Vector3 horizontalVelocity = m_Rigidbody.linearVelocity;
+            horizontalVelocity.y = 0f;
+
+            float worldSpeed = horizontalVelocity.magnitude;
+
+            float targetNormalSpeed = 0f;
+            float targetCrouchSpeed = 0f;
+
+            if (m_Crouching)
+            {
+                if (crouchSpeedForFullAudio > 0f)
+                    targetCrouchSpeed = worldSpeed / crouchSpeedForFullAudio;
+            }
+            else
+            {
+                if (walkSpeedForFullAudio > 0f)
+                    targetNormalSpeed = worldSpeed / walkSpeedForFullAudio;
+            }
+
+            targetNormalSpeed = Mathf.Clamp01(targetNormalSpeed);
+            targetCrouchSpeed = Mathf.Clamp01(targetCrouchSpeed);
+
+            if (targetNormalSpeed < audioSpeedDeadZone)
+                targetNormalSpeed = 0f;
+
+            if (targetCrouchSpeed < audioSpeedDeadZone)
+                targetCrouchSpeed = 0f;
+
+            m_AudioSpeed = SmoothAudioValue(m_AudioSpeed, targetNormalSpeed);
+            m_AudioCrouchSpeed = SmoothAudioValue(m_AudioCrouchSpeed, targetCrouchSpeed);
+        }
+
+        float SmoothAudioValue(float current, float target)
+        {
+            float smoothing = target > current ? audioSpeedSmoothing : audioStopSmoothing;
+            float t = 1f - Mathf.Exp(-smoothing * Time.deltaTime);
+
+            return Mathf.Lerp(current, target, t);
+        }
+
         void HandleAirborneMovement()
         {
             Vector3 extraGravityForce = (Physics.gravity * m_GravityMultiplier) - Physics.gravity;
             m_Rigidbody.AddForce(extraGravityForce);
 
-            m_GroundCheckDistance = m_Rigidbody.linearVelocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
+            m_GroundCheckDistance = m_Rigidbody.linearVelocity.y < 0
+                ? m_OrigGroundCheckDistance
+                : 0.01f;
         }
 
         void HandleGroundedMovement(bool crouch, bool jump)
@@ -178,7 +263,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         void ApplyExtraTurnRotation()
         {
-            float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, m_ForwardAmount);
+            float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, Mathf.Abs(m_ForwardAmount));
             transform.Rotate(0, m_TurnAmount * turnSpeed * Time.deltaTime, 0);
         }
 
@@ -199,12 +284,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 #if UNITY_EDITOR
             Debug.DrawLine(
-                transform.position + (Vector3.up * 0.1f),
-                transform.position + (Vector3.up * 0.1f) + (Vector3.down * m_GroundCheckDistance)
+                transform.position + Vector3.up * 0.1f,
+                transform.position + Vector3.up * 0.1f + Vector3.down * m_GroundCheckDistance
             );
 #endif
 
-            if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hitInfo, m_GroundCheckDistance))
+            if (Physics.Raycast(
+                    transform.position + Vector3.up * 0.1f,
+                    Vector3.down,
+                    out hitInfo,
+                    m_GroundCheckDistance))
             {
                 m_GroundNormal = hitInfo.normal;
                 m_IsGrounded = true;
