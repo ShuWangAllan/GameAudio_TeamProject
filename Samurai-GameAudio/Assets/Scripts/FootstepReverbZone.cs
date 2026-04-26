@@ -21,12 +21,16 @@ public class FootstepReverbZone : MonoBehaviour
     {
         PlayerSounds playerSounds = FindPlayerSounds(other);
         PlayerBreathing playerBreathing = FindPlayerBreathing(other);
+        PlayerJumpLandingSounds jumpLandingSounds = FindJumpLandingSounds(other);
 
         if (playerSounds != null)
             playerSounds.SetFootstepReverb(reverbAmount);
 
         if (playerBreathing != null)
             playerBreathing.SetBreathingReverb(reverbAmount);
+
+        if (jumpLandingSounds != null)
+            jumpLandingSounds.SetJumpReverb(reverbAmount);
 
         if (debugLogs)
         {
@@ -38,12 +42,16 @@ public class FootstepReverbZone : MonoBehaviour
     {
         PlayerSounds playerSounds = FindPlayerSounds(other);
         PlayerBreathing playerBreathing = FindPlayerBreathing(other);
+        PlayerJumpLandingSounds jumpLandingSounds = FindJumpLandingSounds(other);
 
         if (playerSounds != null)
             playerSounds.SetFootstepReverb(0f);
 
         if (playerBreathing != null)
             playerBreathing.SetBreathingReverb(0f);
+
+        if (jumpLandingSounds != null)
+            jumpLandingSounds.SetJumpReverb(0f);
 
         if (debugLogs)
         {
@@ -79,5 +87,20 @@ public class FootstepReverbZone : MonoBehaviour
             return playerBreathing;
 
         return other.GetComponentInParent<PlayerBreathing>();
+    }
+
+    private PlayerJumpLandingSounds FindJumpLandingSounds(Collider other)
+    {
+        PlayerJumpLandingSounds jumpLandingSounds = other.GetComponent<PlayerJumpLandingSounds>();
+
+        if (jumpLandingSounds != null)
+            return jumpLandingSounds;
+
+        jumpLandingSounds = other.GetComponentInChildren<PlayerJumpLandingSounds>();
+
+        if (jumpLandingSounds != null)
+            return jumpLandingSounds;
+
+        return other.GetComponentInParent<PlayerJumpLandingSounds>();
     }
 }

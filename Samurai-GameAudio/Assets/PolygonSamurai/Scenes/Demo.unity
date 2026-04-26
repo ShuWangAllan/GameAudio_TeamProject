@@ -63788,6 +63788,7 @@ MonoBehaviour:
       Data4: 1166397303
     Path: event:/Character/Player/Breathing
   breathIntensityParameterName: BreathIntensity
+  reverbParameterName: RevervAmount
   character: {fileID: 1171214695}
   idleBreathing: 0.24
   walkBreathing: 0.35
@@ -107839,6 +107840,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 424780, guid: c3f8f1a1e2a428a4caaa99166d9b94fe, type: 3}
   m_PrefabInstance: {fileID: 1488523812}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1488749908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1757711021717512, guid: f7988944762557542877880bd717822e, type: 3}
+  m_PrefabInstance: {fileID: 1667841774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1488749911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488749908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8995801b6db376b46a8cee523166b679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpEvent:
+    Guid:
+      Data1: 1322663896
+      Data2: 1128123172
+      Data3: -1683445628
+      Data4: -455006423
+    Path: event:/Character/Player/Jump
+  jumpIntensityParameterName: JumpIntensity
+  reverbParameterName: RevervAmount
+  character: {fileID: 1171214695}
+  jumpIntensity: 0.194
+  jumpSoundCooldown: 1.2
+  debugLogs: 1
 --- !u!1001 &1489751341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120991,7 +121022,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4370811646857884, guid: f7988944762557542877880bd717822e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 231622257}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1757711021717512, guid: f7988944762557542877880bd717822e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1488749911}
   m_SourcePrefab: {fileID: 100100000, guid: f7988944762557542877880bd717822e, type: 3}
 --- !u!1001 &1669163487
 PrefabInstance:
