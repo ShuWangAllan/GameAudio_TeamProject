@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{f709f658-d6a7-4037-ac98-8eedc0895053}">
+		<property name="assetPath">
+			<value>Footsteps/Cloths/freesound_community-rough-cloth-43926 (mp3cut.net).mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.95999999999999996</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c5c1b4af-78a4-41ef-9afd-3d6745bc62de}</destination>
+		</relationship>
+	</object>
+</objects>

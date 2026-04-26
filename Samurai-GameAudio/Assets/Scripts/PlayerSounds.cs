@@ -12,6 +12,7 @@ public class PlayerSounds : MonoBehaviour
     [SerializeField] private string surfaceParameterName = "Footsteps";
     [SerializeField] private string speedParameterName = "Speed";
     [SerializeField] private string crouchParameterName = "Crouch";
+    [SerializeField] private string reverbParameterName = "ReverbAmount";
 
     [Header("Character Reference")]
     [SerializeField] private ThirdPersonCharacter character;
@@ -27,6 +28,8 @@ public class PlayerSounds : MonoBehaviour
     private float nextAllowedLeftFootstepTime;
     private float nextAllowedRightFootstepTime;
 
+    private float currentReverbAmount = 0f;
+
     private void Awake()
     {
         if (character == null)
@@ -37,6 +40,16 @@ public class PlayerSounds : MonoBehaviour
 
         if (character == null)
             Debug.LogWarning("PlayerSounds: ThirdPersonCharacter not found. Speed and crouch parameters will default to 0.");
+    }
+
+    public void SetFootstepReverb(float amount)
+    {
+        currentReverbAmount = Mathf.Clamp01(amount);
+
+        if (debugLogs)
+        {
+            Debug.Log("PlayerSounds: Footstep ReverbAmount set to " + currentReverbAmount.ToString("F2"));
+        }
     }
 
     public bool PlayFootstep(Vector3 position, FootSide footSide, Collider groundCollider)
@@ -96,7 +109,9 @@ public class PlayerSounds : MonoBehaviour
                 " | FMOD Speed: " +
                 GetMovementSpeedForFMOD().ToString("F2") +
                 " | Crouch: " +
-                GetCrouchValue().ToString("F2")
+                GetCrouchValue().ToString("F2") +
+                " | ReverbAmount: " +
+                currentReverbAmount.ToString("F2")
             );
         }
 
@@ -107,6 +122,7 @@ public class PlayerSounds : MonoBehaviour
     {
         TrySetParameter(footstep, crouchParameterName, GetCrouchValue());
         TrySetParameter(footstep, speedParameterName, GetMovementSpeedForFMOD());
+        TrySetParameter(footstep, reverbParameterName, currentReverbAmount);
     }
 
     private bool IsCrouching()

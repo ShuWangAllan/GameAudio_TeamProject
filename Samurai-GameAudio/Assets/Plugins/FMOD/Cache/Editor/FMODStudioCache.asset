@@ -501,6 +501,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 363
+--- !u!114 &-6035860986653915805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Breathing/RevervAmount
+  m_EditorClassIdentifier: 
+  Name: RevervAmount
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2708250296
+    data2: 1079762121
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-5737206299689175826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +555,35 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5550220487056598198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Player/Breathing
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Player/Breathing
+  Guid:
+    Data1: 438106112
+    Data2: 1302351263
+    Data3: -780267615
+    Data4: 1166397303
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8226452511362677964}
+  - {fileID: -6035860986653915805}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8500
 --- !u!114 &-5487978049416546448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,10 +626,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639128121895845642
+  lastModified: 639128205050082670
   FileSizes:
   - Name: Desktop
-    Value: 1606
+    Value: 1754
   Exists: 1
 --- !u!114 &-5325625988281323392
 MonoBehaviour:
@@ -613,10 +666,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639128121895825637
+  lastModified: 639128205050062287
   FileSizes:
   - Name: Desktop
-    Value: 1553728
+    Value: 1667712
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -724,6 +777,7 @@ MonoBehaviour:
   - {fileID: 972893735732541663}
   - {fileID: -2557619135725599870}
   - {fileID: 8610665354052164083}
+  - {fileID: 7859066111631304296}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1544,13 +1598,14 @@ MonoBehaviour:
   - {fileID: 2255189703601006783}
   - {fileID: -7505645938731041838}
   - {fileID: 2650727475042654665}
+  - {fileID: -5550220487056598198}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5276068467445444158}
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639128121895845642
+  cacheTime: 639128205050082670
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -1576,6 +1631,8 @@ MonoBehaviour:
     index: 10
   - key: event:/Weapons/Sword pick up
     index: 11
+  - key: event:/Character/Player/Breathing
+    index: 12
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1948,7 +2005,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639123032278284854
+  lastModified: 639128131900545223
   FileSizes:
   - Name: Desktop
     Value: 153088
@@ -2680,6 +2737,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7859066111631304296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/RevervAmount
+  m_EditorClassIdentifier: 
+  Name: RevervAmount
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2708250296
+    data2: 1079762121
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &8185436346482199201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2707,6 +2788,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8226452511362677964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Breathing/BreathIntensity
+  m_EditorClassIdentifier: 
+  Name: BreathIntensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 699305497
+    data2: 881093941
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &8337521847188581502
 MonoBehaviour:
   m_ObjectHideFlags: 0

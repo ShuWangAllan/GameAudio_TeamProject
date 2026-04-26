@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{22943cf4-a907-4cde-aec4-cbb954ed26fa}">
+		<property name="name">
+			<value>BreathIntensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{00e84b66-faa0-4423-9bf7-35cdd764a060}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{4299f8a9-ffe0-4416-bea1-460b22023560}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{4299f8a9-ffe0-4416-bea1-460b22023560}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

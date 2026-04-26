@@ -17161,7 +17161,7 @@ MonoBehaviour:
   minMovementAmount: 0.03
   requireDownwardMovement: 0
   requiredDownwardSpeed: 0.015
-  debugLogs: 1
+  debugLogs: 0
 --- !u!1001 &231762353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63388,6 +63388,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 402936, guid: 2785a08cbf7168647bd368d6dc28b3d6, type: 3}
   m_PrefabInstance: {fileID: 866853387}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &868293041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868293044}
+  - component: {fileID: 868293043}
+  - component: {fileID: 868293042}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &868293042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868293041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a3e41e1dd6aff4aad3e6a2b7070f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reverbAmount: 1
+  debugLogs: 1
+--- !u!65 &868293043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868293041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &868293044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868293041}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.8291112, z: -0, w: 0.5590837}
+  m_LocalPosition: {x: 68.65, y: 2.48, z: -44.52}
+  m_LocalScale: {x: 10.217069, y: 5.712372, z: 3.0771482}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -112.015, z: 0}
 --- !u!1001 &868866324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63650,6 +63718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 871930142}
   - component: {fileID: 871930143}
+  - component: {fileID: 871930144}
   m_Layer: 0
   m_Name: Footsteps
   m_TagString: Untagged
@@ -63694,10 +63763,39 @@ MonoBehaviour:
   surfaceParameterName: Footsteps
   speedParameterName: Speed
   crouchParameterName: Crouch
+  reverbParameterName: RevervAmount
   character: {fileID: 1171214695}
   minTimeBetweenAnyFootstep: 0.16
   minTimeBetweenSameFoot: 0.32
-  debugLogs: 1
+  debugLogs: 0
+--- !u!114 &871930144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871930141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bb35abfc9b81e41aaa36941c6787a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breathingEvent:
+    Guid:
+      Data1: 438106112
+      Data2: 1302351263
+      Data3: -780267615
+      Data4: 1166397303
+    Path: event:/Character/Player/Breathing
+  breathIntensityParameterName: BreathIntensity
+  character: {fileID: 1171214695}
+  idleBreathing: 0.24
+  walkBreathing: 0.35
+  runBreathing: 0.7
+  crouchBreathing: 0.12
+  increaseSpeed: 3
+  decreaseSpeed: 0.8
+  debugLogs: 0
 --- !u!1001 &872535017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130319,7 +130417,7 @@ MonoBehaviour:
   minMovementAmount: 0.03
   requireDownwardMovement: 0
   requiredDownwardSpeed: 0.015
-  debugLogs: 1
+  debugLogs: 0
 --- !u!4 &1812897416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 438134, guid: 99e3ebc3e2ebe3a45a46b234fd7dcc28, type: 3}
@@ -153327,3 +153425,4 @@ SceneRoots:
   - {fileID: 1863811614}
   - {fileID: 1311364446}
   - {fileID: 412005042}
+  - {fileID: 868293044}
