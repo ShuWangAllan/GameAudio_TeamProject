@@ -1,17 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationRand : MonoBehaviour
 {
-    public Animator m_Animator;
+    [SerializeField] private Animator animator;
+    [SerializeField] private float minSpeed = 0.7f;
+    [SerializeField] private float maxSpeed = 1.2f;
 
-    void Start()
+    private void Awake()
     {
-        m_Animator.speed = Random.Range(0.7f,1.2f);
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
-    
+
+    private void Start()
+    {
+        if (animator != null)
+        {
+            animator.speed = Random.Range(minSpeed, maxSpeed);
+        }
+    }
 }
-
-
-  

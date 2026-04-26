@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3368706}
   - component: {fileID: 2394528}
   - component: {fileID: 64940115031942712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Env_CropRow_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 3794974459413327712}
   - component: {fileID: 3522715819446285210}
   - component: {fileID: 1677859812638843859}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 2177776574457825745}
   - component: {fileID: 2145776954178172511}
   - component: {fileID: 3985524258538708299}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: collision (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 989156373526720382}
   - component: {fileID: 4143446262426081419}
   - component: {fileID: 7329131353800194485}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: collision (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 4625849098314431200}
   - component: {fileID: 3568795447712589575}
   - component: {fileID: 8834286273471796614}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: collision (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 1263358012697684644}
   - component: {fileID: 6566736660918657517}
   - component: {fileID: 2596093690988763995}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: collision (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
