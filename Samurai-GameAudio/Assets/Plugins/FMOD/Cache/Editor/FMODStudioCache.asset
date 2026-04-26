@@ -501,6 +501,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 363
+--- !u!114 &-6195686568931001904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/NPC flighting
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/NPC flighting
+  Guid:
+    Data1: -1583830712
+    Data2: 1259287504
+    Data3: -1458796910
+    Data4: -652306030
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1671762880566935745}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-5737206299689175826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,10 +601,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639120213886830098
+  lastModified: 639128067641301678
   FileSizes:
   - Name: Desktop
-    Value: 1534
+    Value: 1808
   Exists: 1
 --- !u!114 &-5325625988281323392
 MonoBehaviour:
@@ -613,10 +641,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639120213886810092
+  lastModified: 639128067641281710
   FileSizes:
   - Name: Desktop
-    Value: 1205344
+    Value: 2826272
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -1079,6 +1107,30 @@ MonoBehaviour:
   - Name: Desktop
     Value: 387904
   Exists: 1
+--- !u!114 &-1671762880566935745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/NPC flighting/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 4204960151
+    data2: 36507858
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-1660607912697859282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,13 +1570,16 @@ MonoBehaviour:
   - {fileID: 2255189703601006783}
   - {fileID: -7505645938731041838}
   - {fileID: 2650727475042654665}
+  - {fileID: 1184622029593307294}
+  - {fileID: 8229140821492904835}
+  - {fileID: -6195686568931001904}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5276068467445444158}
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639120213886830098
+  cacheTime: 639128067641301678
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -1550,6 +1605,12 @@ MonoBehaviour:
     index: 10
   - key: event:/Weapons/Sword pick up
     index: 11
+  - key: event:/NPC/Yellow Samurai
+    index: 12
+  - key: event:/Enviroment/Mystical pink pollen
+    index: 13
+  - key: event:/NPC/NPC flighting
+    index: 14
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,6 +1762,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1184622029593307294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/Yellow Samurai
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/Yellow Samurai
+  Guid:
+    Data1: -1856253145
+    Data2: 1270676049
+    Data3: 1214340011
+    Data4: 446537463
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4974
 --- !u!114 &1209167577234408106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1922,7 +2010,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639120195116547144
+  lastModified: 639127957134720124
   FileSizes:
   - Name: Desktop
     Value: 153088
@@ -2502,6 +2590,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5436925444678088685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mystical pink pollen/Proximity
+  m_EditorClassIdentifier: 
+  Name: Proximity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1666290350
+    data2: 2571863539
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5827829302890124895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2681,6 +2793,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8229140821492904835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Mystical pink pollen
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Mystical pink pollen
+  Guid:
+    Data1: 878873859
+    Data2: 1289668690
+    Data3: 1367847063
+    Data4: 441244943
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5436925444678088685}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 120000
 --- !u!114 &8337521847188581502
 MonoBehaviour:
   m_ObjectHideFlags: 0
