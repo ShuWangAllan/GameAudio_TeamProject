@@ -115311,6 +115311,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 425318, guid: 4fea5a90bb0cca941a178051e6ea4b54, type: 3}
   m_PrefabInstance: {fileID: 1589345513}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1589620613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 104350, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
+  m_PrefabInstance: {fileID: 2130256217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1590906788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -152096,16 +152101,51 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8277424026097879242, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 104350, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2130256223}
   m_SourcePrefab: {fileID: 100100000, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
 --- !u!4 &2130256218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 474414, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
   m_PrefabInstance: {fileID: 2130256217}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2130256223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589620613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 878873859
+      Data2: 1289668690
+      Data3: 1367847063
+      Data4: 441244943
+    Path: event:/Enviroment/Mystical pink pollen
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &2130743096
 PrefabInstance:
   m_ObjectHideFlags: 0
