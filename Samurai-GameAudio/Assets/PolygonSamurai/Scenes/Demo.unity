@@ -47653,7 +47653,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1554699328970806, guid: eb053838e6978164e89d7ffea7c387d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1259370810}
   m_SourcePrefab: {fileID: 100100000, guid: eb053838e6978164e89d7ffea7c387d7, type: 3}
 --- !u!1001 &645964979
 PrefabInstance:
@@ -89948,6 +89951,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 461992, guid: 6ace688fef2f41d43a4e8eeab19c9523, type: 3}
   m_PrefabInstance: {fileID: 1257651395}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1259370808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1554699328970806, guid: eb053838e6978164e89d7ffea7c387d7, type: 3}
+  m_PrefabInstance: {fileID: 645521751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1259370810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259370808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1583830712
+      Data2: 1259287504
+      Data3: -1458796910
+      Data4: -652306030
+    Path: event:/NPC/NPC flighting
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1260107483
 PrefabInstance:
   m_ObjectHideFlags: 0

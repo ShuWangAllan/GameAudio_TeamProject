@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{a786b6a4-d9e6-4201-80af-1363197f41b8}">
+		<property name="volume">
+			<value>4.5</value>
+		</property>
+		<property name="name">
+			<value>NPC Fighting Bus</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{858fceb6-0e35-461b-b831-1006c42f924c}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{d0391063-c44a-4b4e-a3c9-f21805f00578}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{9c5b5e21-117a-49ec-93f0-520dbaf407f4}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{858fceb6-0e35-461b-b831-1006c42f924c}">
+		<relationship name="effects">
+			<destination>{b6ff1850-18b6-4f03-b30e-d9e33e14e466}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{d0391063-c44a-4b4e-a3c9-f21805f00578}" />
+	<object class="MixerBusFader" id="{b6ff1850-18b6-4f03-b30e-d9e33e14e466}" />
+</objects>
