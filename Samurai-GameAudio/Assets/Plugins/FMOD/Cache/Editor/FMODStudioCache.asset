@@ -626,7 +626,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639128241336126852
+  lastModified: 639129827760904725
   FileSizes:
   - Name: Desktop
     Value: 1880
@@ -666,7 +666,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639128241336116814
+  lastModified: 639129827760902403
   FileSizes:
   - Name: Desktop
     Value: 1703776
@@ -1631,7 +1631,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639128241336126852
+  cacheTime: 639129835783504890
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -2064,7 +2064,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639128131900545223
+  lastModified: 639129835783504890
   FileSizes:
   - Name: Desktop
     Value: 153088
