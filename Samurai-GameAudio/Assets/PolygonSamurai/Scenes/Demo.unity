@@ -11493,6 +11493,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 491472, guid: e6fad05c4d5f2224aaa5c991267146d3, type: 3}
   m_PrefabInstance: {fileID: 164064539}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &166446638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1473767172460428, guid: b8f15482c1461834ba4940cda5faeda2, type: 3}
+  m_PrefabInstance: {fileID: 2022298086}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &166665487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47733,7 +47738,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1554699328970806, guid: eb053838e6978164e89d7ffea7c387d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1259370810}
   m_SourcePrefab: {fileID: 100100000, guid: eb053838e6978164e89d7ffea7c387d7, type: 3}
 --- !u!1001 &645964979
 PrefabInstance:
@@ -50105,6 +50113,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4044178915669558, guid: b8f15482c1461834ba4940cda5faeda2, type: 3}
   m_PrefabInstance: {fileID: 2022298086}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &678619297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166446638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: -1856253145
+      Data2: 1270676049
+      Data3: 1214340011
+      Data4: 446537463
+    Path: event:/NPC/Yellow Samurai
+  Event: 
+  EventPlayTrigger: 3
+  EventStopTrigger: 4
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!135 &678619298
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166446638}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &679749308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90094,6 +90154,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 461992, guid: 6ace688fef2f41d43a4e8eeab19c9523, type: 3}
   m_PrefabInstance: {fileID: 1257651395}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1259370808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1554699328970806, guid: eb053838e6978164e89d7ffea7c387d7, type: 3}
+  m_PrefabInstance: {fileID: 645521751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1259370810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259370808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1583830712
+      Data2: 1259287504
+      Data3: -1458796910
+      Data4: -652306030
+    Path: event:/NPC/NPC flighting
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1260107483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -115479,6 +115575,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 425318, guid: 4fea5a90bb0cca941a178051e6ea4b54, type: 3}
   m_PrefabInstance: {fileID: 1589345513}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1589620613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 104350, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
+  m_PrefabInstance: {fileID: 2130256217}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1590906788
 PrefabInstance:
@@ -145827,7 +145928,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1473767172460428, guid: b8f15482c1461834ba4940cda5faeda2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678619298}
+    - targetCorrespondingSourceObject: {fileID: 1473767172460428, guid: b8f15482c1461834ba4940cda5faeda2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678619297}
   m_SourcePrefab: {fileID: 100100000, guid: b8f15482c1461834ba4940cda5faeda2, type: 3}
 --- !u!1001 &2022516535
 PrefabInstance:
@@ -152362,16 +152469,51 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8277424026097879242, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 104350, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2130256223}
   m_SourcePrefab: {fileID: 100100000, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
 --- !u!4 &2130256218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 474414, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
   m_PrefabInstance: {fileID: 2130256217}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2130256223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589620613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 878873859
+      Data2: 1289668690
+      Data3: 1367847063
+      Data4: 441244943
+    Path: event:/Enviroment/Mystical pink pollen
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &2130743096
 PrefabInstance:
   m_ObjectHideFlags: 0
