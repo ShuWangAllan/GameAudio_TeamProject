@@ -236,6 +236,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &-7967678065107996582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/NPC flighting/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 4204960151
+    data2: 36507858
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-7886614670222625218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +445,30 @@ MonoBehaviour:
   - Name: Desktop
     Value: 4490
   Exists: 1
+--- !u!114 &-6859932755760151082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mystical pink pollen/Proximity
+  m_EditorClassIdentifier: 
+  Name: Proximity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1666290350
+    data2: 2571863539
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6807841720506070485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,6 +549,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 363
+--- !u!114 &-6155952773673788564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Music/TempleSong
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Music/TempleSong
+  Guid:
+    Data1: 383975292
+    Data2: 1323070676
+    Data3: 862127292
+    Data4: 145407708
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60359
 --- !u!114 &-6035860986653915805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,6 +600,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-5832281485035602763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Music/Gong
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Music/Gong
+  Guid:
+    Data1: 137705
+    Data2: 1189863230
+    Data3: -2106886977
+    Data4: -1688459499
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 5.4
+  Length: 0
 --- !u!114 &-5737206299689175826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,6 +713,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-5438704640371869153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/Seed sowing guy
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/Seed sowing guy
+  Guid:
+    Data1: 387406812
+    Data2: 1309961903
+    Data3: -1544392312
+    Data4: -691201744
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1900
 --- !u!114 &-5344990485871040995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,11 +755,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639129820567749658
-  lastModified: 639129852104073360
+  lastModified: 639129871043012586
   FileSizes:
   - Name: Desktop
-    Value: 1880
+    Value: 2486
   Exists: 1
 --- !u!114 &-5325625988281323392
 MonoBehaviour:
@@ -667,11 +795,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639129820567746306
-  lastModified: 639129852104060679
+  lastModified: 639129871042994383
   FileSizes:
   - Name: Desktop
-    Value: 1703680
+    Value: 5237216
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -1088,6 +1215,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 222624
   Exists: 1
+--- !u!114 &-2466577642213908213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/fire
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/fire
+  Guid:
+    Data1: 1852338809
+    Data2: 1074601284
+    Data3: 529604277
+    Data4: -615712998
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11576
+--- !u!114 &-2350602952948109292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Music/VillageSong
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Music/VillageSong
+  Guid:
+    Data1: -1034139930
+    Data2: 1311738572
+    Data3: 556745604
+    Data4: -1365575588
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 80000
 --- !u!114 &-2181289596980581600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1290,6 +1471,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10598
+--- !u!114 &-1380224978638416733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/Seed sowing guy 2
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/Seed sowing guy 2
+  Guid:
+    Data1: -61813021
+    Data2: 1245647499
+    Data3: -575428708
+    Data4: 952979553
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2800
 --- !u!114 &-1337387799818497582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1627,14 +1835,24 @@ MonoBehaviour:
   - {fileID: -5550220487056598198}
   - {fileID: 793594962122742255}
   - {fileID: 4385759817751011398}
+  - {fileID: 1162140855872523623}
+  - {fileID: 5856733944782098947}
+  - {fileID: 5319282366317803039}
+  - {fileID: -2466577642213908213}
+  - {fileID: -6155952773673788564}
+  - {fileID: 2862271136776100828}
+  - {fileID: -5438704640371869153}
+  - {fileID: -1380224978638416733}
+  - {fileID: 249225029361299379}
+  - {fileID: -2350602952948109292}
+  - {fileID: -5832281485035602763}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5276068467445444158}
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639129820567749658
-  cacheTime: 639129852105588584
+  cacheTime: 639129871043012586
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -1666,6 +1884,28 @@ MonoBehaviour:
     index: 13
   - key: event:/Character/Player/Land
     index: 14
+  - key: event:/Enviroment/Mystical pink pollen
+    index: 15
+  - key: event:/NPC/Yellow Samurai
+    index: 16
+  - key: event:/NPC/NPC flighting
+    index: 17
+  - key: event:/Enviroment/fire
+    index: 18
+  - key: event:/Enviroment/Music/TempleSong
+    index: 19
+  - key: event:/Enviroment/Music/Shamisen
+    index: 20
+  - key: event:/NPC/Seed sowing guy
+    index: 21
+  - key: event:/NPC/Seed sowing guy 2
+    index: 22
+  - key: event:/Enviroment/fire 2
+    index: 23
+  - key: event:/Enviroment/Music/VillageSong
+    index: 24
+  - key: event:/Enviroment/Music/Gong
+    index: 25
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1713,6 +1953,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &249225029361299379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/fire 2
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/fire 2
+  Guid:
+    Data1: -1971367707
+    Data2: 1106154737
+    Data3: 1835443131
+    Data4: 603141324
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 9.2
+  Length: 12076
 --- !u!114 &563197267565578856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1846,6 +2113,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1162140855872523623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Mystical pink pollen
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Mystical pink pollen
+  Guid:
+    Data1: 878873859
+    Data2: 1289668690
+    Data3: 1367847063
+    Data4: 441244943
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6859932755760151082}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 120000
 --- !u!114 &1209167577234408106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2067,7 +2362,6 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639123715552561652
   lastModified: 639129852105588584
   FileSizes:
   - Name: Desktop
@@ -2226,6 +2520,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &2862271136776100828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Music/Shamisen
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Music/Shamisen
+  Guid:
+    Data1: -1657324070
+    Data2: 1303513219
+    Data3: -1253503872
+    Data4: -1274358897
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 4
+  Length: 0
 --- !u!114 &2867323047799670870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2672,6 +2993,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1488
+--- !u!114 &5319282366317803039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/NPC flighting
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/NPC flighting
+  Guid:
+    Data1: -1583830712
+    Data2: 1259287504
+    Data3: -1458796910
+    Data4: -652306030
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7967678065107996582}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &5323092169217819696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2726,6 +3075,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1859
+--- !u!114 &5856733944782098947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/Yellow Samurai
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/Yellow Samurai
+  Guid:
+    Data1: -1856253145
+    Data2: 1270676049
+    Data3: 1214340011
+    Data4: 446537463
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4974
 --- !u!114 &6077929919284623250
 MonoBehaviour:
   m_ObjectHideFlags: 0

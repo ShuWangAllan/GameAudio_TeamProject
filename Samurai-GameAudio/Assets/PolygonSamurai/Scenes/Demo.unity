@@ -17151,7 +17151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSounds: {fileID: 871930143}
-  character: {fileID: 1171214695}
+  character: {fileID: 0}
   footSide: 1
   localSoleOffset: {x: 0, y: 0, z: 0}
   groundMask:
@@ -34796,6 +34796,10 @@ PrefabInstance:
     - target: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_GravityMultiplier
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13615390, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63824,7 +63828,7 @@ MonoBehaviour:
   speedParameterName: Speed
   crouchParameterName: Crouch
   reverbParameterName: RevervAmount
-  character: {fileID: 1171214695}
+  character: {fileID: 0}
   minTimeBetweenAnyFootstep: 0.16
   minTimeBetweenSameFoot: 0.32
   debugLogs: 0
@@ -63849,7 +63853,7 @@ MonoBehaviour:
     Path: event:/Character/Player/Breathing
   breathIntensityParameterName: BreathIntensity
   reverbParameterName: RevervAmount
-  character: {fileID: 1171214695}
+  character: {fileID: 0}
   idleBreathing: 0.24
   walkBreathing: 0.35
   runBreathing: 0.7
@@ -84047,17 +84051,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSounds: {fileID: 871930143}
---- !u!114 &1171214695 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-  m_PrefabInstance: {fileID: 477201539}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171214693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1171730616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107962,7 +107955,7 @@ MonoBehaviour:
     Path: event:/Character/Player/Jump
   jumpIntensityParameterName: JumpIntensity
   reverbParameterName: RevervAmount
-  character: {fileID: 1171214695}
+  character: {fileID: 0}
   jumpIntensity: 0.194
   jumpSoundCooldown: 1.2
   debugLogs: 1
@@ -130537,7 +130530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSounds: {fileID: 871930143}
-  character: {fileID: 1171214695}
+  character: {fileID: 0}
   footSide: 0
   localSoleOffset: {x: 0, y: 0, z: 0}
   groundMask:
