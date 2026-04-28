@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="ParameterPreset" id="{c25d1fc6-36f7-4fdc-a8f7-69168f37c11f}">
+	<object class="ParameterPreset" id="{a32f5868-8322-480a-bbe2-05522836f04c}">
 		<property name="name">
-			<value>Speed</value>
+			<value>RevervAmount</value>
 		</property>
 		<relationship name="folder">
 			<destination>{00e84b66-faa0-4423-9bf7-35cdd764a060}</destination>
 		</relationship>
 		<relationship name="parameter">
-			<destination>{f7f4aaff-5672-46a4-8c47-3913b4c5c29d}</destination>
+			<destination>{2bd78278-bb18-48f2-8c5d-2c7bd054b2a7}</destination>
 		</relationship>
 	</object>
-	<object class="GameParameter" id="{f7f4aaff-5672-46a4-8c47-3913b4c5c29d}">
+	<object class="GameParameter" id="{2bd78278-bb18-48f2-8c5d-2c7bd054b2a7}">
 		<property name="initialValue">
 			<value>0</value>
 		</property>

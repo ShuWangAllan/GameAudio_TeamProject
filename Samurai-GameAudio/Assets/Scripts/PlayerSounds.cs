@@ -12,19 +12,10 @@ public class PlayerSounds : MonoBehaviour
     [SerializeField] private string surfaceParameterName = "Footsteps";
     [SerializeField] private string speedParameterName = "Speed";
     [SerializeField] private string crouchParameterName = "Crouch";
-    [SerializeField] private string crouchSpeedParameterName = "CrouchSpeed";
+    [SerializeField] private string reverbParameterName = "ReverbAmount";
 
-    [Header("Movement Reference")]
+    [Header("Character Reference")]
     [SerializeField] private ThirdPersonCharacter character;
-    [SerializeField] private Rigidbody characterRigidbody;
-
-    [Header("Normal Speed Tuning")]
-    [SerializeField] private float normalWorldSpeedForFullSpeed = 4.5f;
-    [SerializeField, Range(0f, 1f)] private float minimumNormalSpeed = 0.2f;
-
-    [Header("Crouch Speed Tuning")]
-    [SerializeField] private float crouchWorldSpeedForFullSpeed = 1.8f;
-    [SerializeField, Range(0f, 1f)] private float minimumCrouchSpeed = 0.15f;
 
     [Header("Anti-Spam")]
     [SerializeField] private float minTimeBetweenAnyFootstep = 0.16f;
@@ -37,22 +28,28 @@ public class PlayerSounds : MonoBehaviour
     private float nextAllowedLeftFootstepTime;
     private float nextAllowedRightFootstepTime;
 
+    private float currentReverbAmount = 0f;
+
     private void Awake()
     {
         if (character == null)
             character = GetComponentInParent<ThirdPersonCharacter>();
 
-        if (characterRigidbody == null)
-            characterRigidbody = GetComponentInParent<Rigidbody>();
-
         if (footstepsEvent.IsNull)
             Debug.LogError("PlayerSounds: Footsteps Event is not assigned.");
 
         if (character == null)
-            Debug.LogWarning("PlayerSounds: ThirdPersonCharacter not found.");
+            Debug.LogWarning("PlayerSounds: ThirdPersonCharacter not found. Speed and crouch parameters will default to 0.");
+    }
 
-        if (characterRigidbody == null)
-            Debug.LogWarning("PlayerSounds: Rigidbody not found.");
+    public void SetFootstepReverb(float amount)
+    {
+        currentReverbAmount = Mathf.Clamp01(amount);
+
+        if (debugLogs)
+        {
+            Debug.Log("PlayerSounds: Footstep ReverbAmount set to " + currentReverbAmount.ToString("F2"));
+        }
     }
 
     public bool PlayFootstep(Vector3 position, FootSide footSide, Collider groundCollider)
@@ -109,12 +106,12 @@ public class PlayerSounds : MonoBehaviour
                 groundCollider.name +
                 " | Crouching: " +
                 IsCrouching() +
-                " | Speed: " +
-                GetNormalSpeedParameterValue().ToString("F2") +
-                " | CrouchSpeed: " +
-                GetCrouchSpeedParameterValue().ToString("F2") +
+                " | FMOD Speed: " +
+                GetMovementSpeedForFMOD().ToString("F2") +
                 " | Crouch: " +
-                GetCrouchParameterValue().ToString("F2")
+                GetCrouchValue().ToString("F2") +
+                " | ReverbAmount: " +
+                currentReverbAmount.ToString("F2")
             );
         }
 
@@ -123,13 +120,9 @@ public class PlayerSounds : MonoBehaviour
 
     private void SetMovementParameters(EventInstance footstep)
     {
-        float crouchValue = GetCrouchParameterValue();
-        float normalSpeedValue = GetNormalSpeedParameterValue();
-        float crouchSpeedValue = GetCrouchSpeedParameterValue();
-
-        TrySetParameter(footstep, crouchParameterName, crouchValue);
-        TrySetParameter(footstep, speedParameterName, normalSpeedValue);
-        TrySetParameter(footstep, crouchSpeedParameterName, crouchSpeedValue);
+        TrySetParameter(footstep, crouchParameterName, GetCrouchValue());
+        TrySetParameter(footstep, speedParameterName, GetMovementSpeedForFMOD());
+        TrySetParameter(footstep, reverbParameterName, currentReverbAmount);
     }
 
     private bool IsCrouching()
@@ -137,60 +130,20 @@ public class PlayerSounds : MonoBehaviour
         return character != null && character.IsCrouching;
     }
 
-    private float GetCrouchParameterValue()
+    private float GetCrouchValue()
     {
         return IsCrouching() ? 1f : 0f;
     }
 
-    private float GetNormalSpeedParameterValue()
+    private float GetMovementSpeedForFMOD()
     {
+        if (character == null)
+            return 0f;
+
         if (IsCrouching())
-            return 0f;
+            return character.AudioCrouchSpeed;
 
-        float worldSpeed = GetHorizontalWorldSpeed();
-
-        float value = 0f;
-
-        if (normalWorldSpeedForFullSpeed > 0f)
-            value = worldSpeed / normalWorldSpeedForFullSpeed;
-
-        value = Mathf.Clamp01(value);
-
-        if (worldSpeed > 0.05f)
-            value = Mathf.Max(value, minimumNormalSpeed);
-
-        return value;
-    }
-
-    private float GetCrouchSpeedParameterValue()
-    {
-        if (!IsCrouching())
-            return 0f;
-
-        float worldSpeed = GetHorizontalWorldSpeed();
-
-        float value = 0f;
-
-        if (crouchWorldSpeedForFullSpeed > 0f)
-            value = worldSpeed / crouchWorldSpeedForFullSpeed;
-
-        value = Mathf.Clamp01(value);
-
-        if (worldSpeed > 0.03f)
-            value = Mathf.Max(value, minimumCrouchSpeed);
-
-        return value;
-    }
-
-    private float GetHorizontalWorldSpeed()
-    {
-        if (characterRigidbody == null)
-            return 0f;
-
-        Vector3 velocity = characterRigidbody.linearVelocity;
-        velocity.y = 0f;
-
-        return velocity.magnitude;
+        return character.AudioSpeed;
     }
 
     private bool CanPlayFootstep(FootSide footSide)
