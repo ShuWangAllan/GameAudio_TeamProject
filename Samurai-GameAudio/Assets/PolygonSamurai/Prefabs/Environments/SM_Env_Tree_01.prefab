@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 6470898548313342972}
   - component: {fileID: 5901140254821736971}
   - component: {fileID: 124468785040726168}
+  - component: {fileID: 8277424026097879242}
   m_Layer: 0
   m_Name: leafs
   m_TagString: Untagged
@@ -223,3 +224,24 @@ MonoBehaviour:
     Path: event:/Enviroment/SYC_branches
   randomAudioEmitCD3: 1.5
   randomPlayChance: 70
+--- !u!135 &8277424026097879242
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4546998947294073344}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 7
+  m_Center: {x: 0, y: 0, z: 0}
