@@ -72,6 +72,7 @@ public class SYC_emitSoundWhileMovingInsideMesh : MonoBehaviour
             //Debug.Log(playerRigidbody.linearVelocity.y);
             if (playerRigidbody.linearVelocity.magnitude > 1f)
             {
+                Debug.Log("Triggered in" + this.gameObject.name);
                 if (timer1 >= audioEmitCD1)
                 {
                     RuntimeManager.PlayOneShot(audioEvent1, transform.position);
