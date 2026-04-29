@@ -5,7 +5,7 @@ public class FootstepTrigger : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private PlayerSounds playerSounds;
-    [SerializeField] private ThirdPersonCharacter character;
+    [SerializeField] ThirdPersonCharacter character;
 
     [Header("Foot")]
     [SerializeField] private FootSide footSide = FootSide.Left;
