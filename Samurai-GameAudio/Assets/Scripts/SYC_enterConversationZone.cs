@@ -32,7 +32,11 @@ public class SYC_enterConversationZone : MonoBehaviour
         if (player.gameObject.tag == "Player")
         {
             playerInsideConversationZone = false;
-            EPressed = false;
+            if (EPressed)
+            {
+                narrationPlayedOnce = true;
+                EPressed = false;
+            }
             Narration1UI.SetActive(false);
             Narration2UI.SetActive(false);
             pressToTalkUI.SetActive(false);
@@ -44,7 +48,7 @@ public class SYC_enterConversationZone : MonoBehaviour
     {
         if(playerInsideConversationZone)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && !EPressed )
             {
                 Debug.Log("E trigger");
                 EPressed = true;
@@ -54,7 +58,6 @@ public class SYC_enterConversationZone : MonoBehaviour
                     RuntimeManager.PlayOneShot(Narration1AudioEvent, this.transform.position);
                     Narration1UI.SetActive(true);
                     pressToTalkUI.SetActive(false);
-                    narrationPlayedOnce = true;
                 }
                 else
                 {
