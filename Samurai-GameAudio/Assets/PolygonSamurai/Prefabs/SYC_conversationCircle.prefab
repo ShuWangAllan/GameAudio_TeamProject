@@ -86,7 +86,7 @@ SpriteRenderer:
   m_Size: {x: 20, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8372383873046315584
@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b7c5ff8dfbb6e4e9ccde13dcdb8340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
 --- !u!1 &6037508970642070935
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +199,7 @@ SpriteRenderer:
   m_Size: {x: 20, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &5517916680554798858
@@ -227,7 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b7c5ff8dfbb6e4e9ccde13dcdb8340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
 --- !u!1 &6467568275033281262
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b7c5ff8dfbb6e4e9ccde13dcdb8340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
 --- !u!1 &8924226025027337955
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,17 +411,11 @@ MonoBehaviour:
   pressToTalkUI: {fileID: 6467568275033281262}
   Narration1UI: {fileID: 4079739245270368649}
   Narration2UI: {fileID: 6037508970642070935}
-  Narration1AudioEvent:
+  NarrationAudioEvent:
     Guid:
-      Data1: 363998968
-      Data2: 1186393327
-      Data3: 1535444113
-      Data4: 505256310
-    Path: event:/NPC/SYC_leekQuestBeginNarration
-  Narration2AudioEvent:
-    Guid:
-      Data1: -1488786907
-      Data2: 1137428712
-      Data3: 1488631448
-      Data4: -567869077
-    Path: event:/NPC/SYC_leekQuestEndNarration
+      Data1: 197309012
+      Data2: 1297523705
+      Data3: -476782447
+      Data4: -458719255
+    Path: event:/NPC/SYC_NPCNarrations
+  narrationLineNo: 1

@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 
@@ -6,8 +7,9 @@ public class SYC_enterConversationZone : MonoBehaviour
     public GameObject pressToTalkUI;
     public GameObject Narration1UI;
     public GameObject Narration2UI;
-    public EventReference Narration1AudioEvent;
-    public EventReference Narration2AudioEvent;
+    public EventReference NarrationAudioEvent;
+    public EventInstance narrationInstance;
+    public int narrationLineNo = 1;
     private bool narrationPlayedOnce = false;
     private bool EPressed = false;
     private bool playerInsideConversationZone;
@@ -15,7 +17,7 @@ public class SYC_enterConversationZone : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider player)
@@ -46,25 +48,36 @@ public class SYC_enterConversationZone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerInsideConversationZone)
+        narrationInstance.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
+
+        if (playerInsideConversationZone)
         {
             if (Input.GetKeyDown(KeyCode.E) && !EPressed )
             {
-                Debug.Log("E trigger");
+                //Debug.Log("E trigger");
                 EPressed = true;
+                if (narrationInstance.isValid())
+                {
+                    narrationInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                }
+                narrationInstance = RuntimeManager.CreateInstance(NarrationAudioEvent);
+
                 //Add your conversation here
                 if (!narrationPlayedOnce)
                 {
-                    RuntimeManager.PlayOneShot(Narration1AudioEvent, this.transform.position);
+                    //RuntimeManager.PlayOneShot(Narration1AudioEvent, this.transform.position);
+                    narrationInstance.setParameterByName("npcNarrationNo", narrationLineNo);
                     Narration1UI.SetActive(true);
-                    pressToTalkUI.SetActive(false);
                 }
                 else
                 {
-                    RuntimeManager.PlayOneShot(Narration2AudioEvent, this.transform.position);
+                    //RuntimeManager.PlayOneShot(Narration2AudioEvent, this.transform.position);
+                    narrationInstance.setParameterByName("npcNarrationNo", narrationLineNo + 21);
                     Narration2UI.SetActive(true);
-                    pressToTalkUI.SetActive(false);
                 }
+                narrationInstance.start();
+                narrationInstance.release();
+                pressToTalkUI.SetActive(false);
             }
         }
     }

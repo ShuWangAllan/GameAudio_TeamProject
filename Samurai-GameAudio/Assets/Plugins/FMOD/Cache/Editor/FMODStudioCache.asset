@@ -388,7 +388,7 @@ MonoBehaviour:
     Data4: 505256310
   Banks:
   - {fileID: -5276068467445444158}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -755,10 +755,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639130884401443791
+  lastModified: 639133650821051229
   FileSizes:
   - Name: Desktop
-    Value: 2486
+    Value: 2922
   Exists: 1
 --- !u!114 &-5325625988281323392
 MonoBehaviour:
@@ -795,10 +795,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639130884401422372
+  lastModified: 639133650821015734
   FileSizes:
   - Name: Desktop
-    Value: 5237216
+    Value: 7790208
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -1066,6 +1066,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-3466710022642153778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SYC_NPCNarrations/npcNarrationNo
+  m_EditorClassIdentifier: 
+  Name: npcNarrationNo
+  StudioPath: 
+  Min: 1
+  Max: 42
+  Default: 1
+  ID:
+    data1: 3694744084
+    data2: 821839602
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-3303719661392882239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,6 +1195,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-2593825579276606363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_BridgeSamuraiYellowBeforeTask
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_BridgeSamuraiYellowBeforeTask
+  Guid:
+    Data1: -1591467825
+    Data2: 1268599552
+    Data3: 670084266
+    Data4: 1296424606
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2557619135725599870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1444,6 +1495,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1557640973554191640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_NPCNarrations
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_NPCNarrations
+  Guid:
+    Data1: 197309012
+    Data2: 1297523705
+    Data3: -476782447
+    Data4: -458719255
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3466710022642153778}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1520425974946657364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1632,6 +1711,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-749124580800424855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_BridgeSamuraiBlueBeforeTask
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_BridgeSamuraiBlueBeforeTask
+  Guid:
+    Data1: 1383274153
+    Data2: 1203283388
+    Data3: -690091344
+    Data4: 1803314693
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-405651161911907643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1846,13 +1952,20 @@ MonoBehaviour:
   - {fileID: 249225029361299379}
   - {fileID: -2350602952948109292}
   - {fileID: -5832281485035602763}
+  - {fileID: -1557640973554191640}
+  - {fileID: 7030305162252400044}
+  - {fileID: 4005924368047661812}
+  - {fileID: 7564483498014002579}
+  - {fileID: -749124580800424855}
+  - {fileID: 6370683403929901160}
+  - {fileID: -2593825579276606363}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5276068467445444158}
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639130884401443791
+  cacheTime: 639133650821051229
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -1906,6 +2019,20 @@ MonoBehaviour:
     index: 24
   - key: event:/Enviroment/Music/Gong
     index: 25
+  - key: event:/NPC/SYC_NPCNarrations
+    index: 26
+  - key: event:/NPC/SYC_SwordMasterTaskEndNarration
+    index: 27
+  - key: event:/NPC/SYC_BridgeSamuraiYellowAfterTask
+    index: 28
+  - key: event:/NPC/SYC_SwordMasterTaskBeginNarration
+    index: 29
+  - key: event:/NPC/SYC_BridgeSamuraiBlueBeforeTask
+    index: 30
+  - key: event:/NPC/SYC_BridgeSamuraiBlueAfterTask
+    index: 31
+  - key: event:/NPC/SYC_BridgeSamuraiYellowBeforeTask
+    index: 32
 --- !u!114 &6682846690539193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2362,7 +2489,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639129852506532775
+  lastModified: 639133552912718719
   FileSizes:
   - Name: Desktop
     Value: 153088
@@ -2786,6 +2913,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 147
+--- !u!114 &4005924368047661812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_BridgeSamuraiYellowAfterTask
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_BridgeSamuraiYellowAfterTask
+  Guid:
+    Data1: -1502313611
+    Data2: 1108805440
+    Data3: 368744336
+    Data4: 1912982421
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4309642416868023722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3129,6 +3283,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4074
+--- !u!114 &6370683403929901160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_BridgeSamuraiBlueAfterTask
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_BridgeSamuraiBlueAfterTask
+  Guid:
+    Data1: 1383136953
+    Data2: 1089939235
+    Data3: -790520389
+    Data4: -2053072364
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6376591723976038452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3173,6 +3354,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1534
   Exists: 1
+--- !u!114 &7030305162252400044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_SwordMasterTaskEndNarration
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_SwordMasterTaskEndNarration
+  Guid:
+    Data1: 685088272
+    Data2: 1272951223
+    Data3: 1935135903
+    Data4: -14120164
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7564483498014002579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/SYC_SwordMasterTaskBeginNarration
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/SYC_SwordMasterTaskBeginNarration
+  Guid:
+    Data1: 659373964
+    Data2: 1183141222
+    Data3: -162466385
+    Data4: -696487926
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7649693801023001911
 MonoBehaviour:
   m_ObjectHideFlags: 0

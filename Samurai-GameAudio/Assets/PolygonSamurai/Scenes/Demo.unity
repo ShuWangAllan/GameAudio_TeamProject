@@ -8828,6 +8828,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -19967,9 +19971,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 422504829}
     m_Modifications:
     - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.y
+      value: 10.000977
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: cac7f8c9cd4fdfd4ca808e005c0d0535, type: 3}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2465665887201497145, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -20011,9 +20027,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.y
+      value: 10.000977
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5fbb40566c8d9494b8d75d7b1f83e80a, type: 3}
+      objectReference: {fileID: 21300000, guid: b6376bfcc7d9ff148a29cc8d59ce79a6, type: 3}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4564656256949805120, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Radius
       value: 3
@@ -20025,6 +20053,10 @@ PrefabInstance:
     - target: {fileID: 4564656256949805120, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Center.z
       value: -0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -28781,6 +28813,10 @@ PrefabInstance:
     - target: {fileID: 4564656256949805120, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Center.z
       value: -0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -39956,6 +39992,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -45496,6 +45536,10 @@ PrefabInstance:
     - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -58585,6 +58629,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.39
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -63687,6 +63735,10 @@ PrefabInstance:
     - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -71919,6 +71971,10 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -72918,6 +72974,10 @@ PrefabInstance:
     - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -79938,9 +79998,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 160868493}
     m_Modifications:
     - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.y
+      value: 10.000977
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 35217ce918d5c8a4a8b46d6eddc6ac95, type: 3}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2465665887201497145, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -79982,9 +80054,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.y
+      value: 10.000977
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e4837b28726597249988c051aee48af9, type: 3}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4564656256949805120, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Radius
       value: 3
@@ -79996,6 +80080,10 @@ PrefabInstance:
     - target: {fileID: 4564656256949805120, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Center.z
       value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -112382,6 +112470,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.08
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -121292,6 +121384,10 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 1.74
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -127069,6 +127165,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -131242,6 +131342,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -132822,9 +132926,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 2022885520}
     m_Modifications:
     - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.y
+      value: 10.000977
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a7e8fa91ce39206409db3086e89b9b85, type: 3}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2465665887201497145, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -132866,9 +132982,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.y
+      value: 10.000977
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b6376bfcc7d9ff148a29cc8d59ce79a6, type: 3}
+      objectReference: {fileID: 21300000, guid: 5fbb40566c8d9494b8d75d7b1f83e80a, type: 3}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4564656256949805120, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Radius
       value: 3
@@ -132880,6 +133008,10 @@ PrefabInstance:
     - target: {fileID: 4564656256949805120, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Center.z
       value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -134692,6 +134824,10 @@ PrefabInstance:
     - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -143483,6 +143619,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -145010,6 +145150,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -145711,9 +145855,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 1125534426}
     m_Modifications:
     - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.y
+      value: 10.000977
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 231b3e94dff395d49833954534fa06e0, type: 3}
+    - target: {fileID: 1010336359637233058, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2465665887201497145, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -145755,12 +145911,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_Size.y
+      value: 10.000977
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0241695fafa62ee41a99770f930a3c16, type: 3}
+    - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4079739245270368649, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: NarrationAudioEvent.Path
+      value: event:/NPC/SYC_NPCNarrations
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: NarrationAudioEvent.Guid.Data1
+      value: 197309012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: NarrationAudioEvent.Guid.Data2
+      value: 1297523705
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: NarrationAudioEvent.Guid.Data3
+      value: -476782447
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: NarrationAudioEvent.Guid.Data4
+      value: -458719255
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -146264,6 +146452,10 @@ PrefabInstance:
     - target: {fileID: 3426832777257665008, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
@@ -151679,6 +151871,10 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8924226025027337955, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: m_Name
       value: SYC_conversationCircle
@@ -155489,6 +155685,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 656592857}
+    - target: {fileID: 4691090898143656467, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
+      propertyPath: narrationLineNo
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5730260994517018178, guid: 8f78f5cfd31835842adbc07aaa300381, type: 3}
       propertyPath: cam
       value: 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{c5275c1c-4071-4992-af3a-4b3b13aa7352}">
+		<property name="name">
+			<value>npcNarrationNo</value>
+		</property>
+		<relationship name="folder">
+			<destination>{00e84b66-faa0-4423-9bf7-35cdd764a060}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{7b4dc0d7-843e-4828-92a2-2dc9f9ae0eb7}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{7b4dc0d7-843e-4828-92a2-2dc9f9ae0eb7}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>43</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>
