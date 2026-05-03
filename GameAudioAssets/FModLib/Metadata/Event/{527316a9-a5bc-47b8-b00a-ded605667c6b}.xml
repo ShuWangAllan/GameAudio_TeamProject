@@ -5,7 +5,7 @@
 			<value>SYC_BridgeSamuraiBlueBeforeTask</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b3f1ba01-ef94-4ba4-9363-f30f0f02b112}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{d1c921e8-7092-4d5a-a740-3b1b300dbe49}">
 		<relationship name="effects">
 			<destination>{68732049-0fe3-4822-810e-a17fb8414cd0}</destination>
+			<destination>{77e4e148-78e4-4fcd-ac52-044520e6df35}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7d27e20d-cba7-425e-b8d5-6573a84c0e50}" />
@@ -106,4 +107,12 @@
 	</object>
 	<object class="MixerBusFader" id="{47e59c92-7ae4-4335-b69b-f4bc05068fc7}" />
 	<object class="MixerBusFader" id="{68732049-0fe3-4822-810e-a17fb8414cd0}" />
+	<object class="SpatialiserEffect" id="{77e4e148-78e4-4fcd-ac52-044520e6df35}">
+		<property name="minimumDistance">
+			<value>2.60000014</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 </objects>

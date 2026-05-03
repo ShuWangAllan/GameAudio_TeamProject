@@ -5,7 +5,7 @@
 			<value>SYC_BridgeSamuraiYellowBeforeTask</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b3f1ba01-ef94-4ba4-9363-f30f0f02b112}</destination>
@@ -84,7 +84,7 @@
 	</object>
 	<object class="MultiSound" id="{751bfe27-28ae-4c99-acb2-9745b74235b3}">
 		<relationship name="sounds">
-			<destination>{7bc822db-2d1a-4ab9-ac14-1f72da83f2ed}</destination>
+			<destination>{8eb890b4-0c9a-46b1-8a48-388ee1768381}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{96780212-3eb2-478f-9e88-87328e526cc7}">
@@ -96,14 +96,23 @@
 	<object class="MixerBusEffectChain" id="{906f2d6d-4aab-4b82-82a2-aedab8c6349d}">
 		<relationship name="effects">
 			<destination>{9725ce2a-50bf-403d-ae6f-8c1eccce4987}</destination>
+			<destination>{d52aea80-802f-4a02-82e8-c531bac75971}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a2e8edc8-d043-480f-b82d-d09eb941935b}" />
-	<object class="SingleSound" id="{7bc822db-2d1a-4ab9-ac14-1f72da83f2ed}">
+	<object class="SingleSound" id="{8eb890b4-0c9a-46b1-8a48-388ee1768381}">
 		<relationship name="audioFile">
-			<destination>{1d7bc2d3-8f3a-4578-a9db-23da7349a701}</destination>
+			<destination>{debb50f6-85c6-4c13-ac6d-8e54b39f7b8a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{4c9587f7-8e8d-4a95-bc0c-1a9f1a7cbaf5}" />
 	<object class="MixerBusFader" id="{9725ce2a-50bf-403d-ae6f-8c1eccce4987}" />
+	<object class="SpatialiserEffect" id="{d52aea80-802f-4a02-82e8-c531bac75971}">
+		<property name="minimumDistance">
+			<value>2.60000014</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 </objects>

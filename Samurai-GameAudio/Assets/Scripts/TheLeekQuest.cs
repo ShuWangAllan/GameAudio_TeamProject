@@ -25,7 +25,9 @@ public class TheLeekQuest : MonoBehaviour
     private bool questEnd = false;
     public EventReference QuestStartNpcNarrationAudioEvent;
     public EventReference QuestEndNpcNarrationAudioEvent;
-    public Vector3 ReekTraderPos;
+    private EventInstance currentVoiceLine;
+    public GameObject reekTraderObj;
+    private Vector3 ReekTraderPos;
 
 
     // Start is called before the first frame update
@@ -39,7 +41,7 @@ public class TheLeekQuest : MonoBehaviour
         leekUIImage.SetActive(false);
         QuestBeginNarrationUI.SetActive(false);
         QuestEndNarrationUI.SetActive(false);
-
+        ReekTraderPos = reekTraderObj.transform.position;
     }
 
     // Update is called once per frame

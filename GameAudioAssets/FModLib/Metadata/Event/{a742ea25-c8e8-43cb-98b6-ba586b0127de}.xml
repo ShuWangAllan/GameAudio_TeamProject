@@ -5,7 +5,7 @@
 			<value>SYC_leekQuestEndNarration</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b3f1ba01-ef94-4ba4-9363-f30f0f02b112}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{bcafb31e-a66a-4448-a891-b9e873d6055e}">
 		<relationship name="effects">
 			<destination>{ffdd6a65-106e-4468-a1b3-d09e9b60c691}</destination>
+			<destination>{93618294-abbf-42fe-92b8-825402efafc7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5e047679-7eef-4aa1-9870-bcd8504d6fc7}" />
@@ -106,4 +107,12 @@
 	</object>
 	<object class="MixerBusFader" id="{6555cc10-dd93-487a-9da7-be1c0a3b66d3}" />
 	<object class="MixerBusFader" id="{ffdd6a65-106e-4468-a1b3-d09e9b60c691}" />
+	<object class="SpatialiserEffect" id="{93618294-abbf-42fe-92b8-825402efafc7}">
+		<property name="minimumDistance">
+			<value>2.60000014</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 </objects>

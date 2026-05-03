@@ -14,14 +14,16 @@ public class SwordPickup : MonoBehaviour
 
     void OnTriggerEnter(Collider player)
     {
-        if(player.gameObject.tag == "Player"){
+        if(player.gameObject.tag == "Player")
+        {
             playerCanPickupSword = true;
         }
     }
 
     void OnTriggerExit(Collider player)
     {
-        if(player.gameObject.tag == "Player"){
+        if(player.gameObject.tag == "Player")
+        {
             playerCanPickupSword = false;
         }
     }

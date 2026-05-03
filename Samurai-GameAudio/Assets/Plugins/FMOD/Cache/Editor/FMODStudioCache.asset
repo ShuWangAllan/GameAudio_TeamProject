@@ -389,7 +389,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5276068467445444158}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -755,7 +755,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639133650821051229
+  lastModified: 639134172592660202
   FileSizes:
   - Name: Desktop
     Value: 2922
@@ -795,10 +795,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639133650821015734
+  lastModified: 639134172592625897
   FileSizes:
   - Name: Desktop
-    Value: 7790208
+    Value: 7792608
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5276068467445444158}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5276068467445444158}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1965,7 +1965,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639133650821051229
+  cacheTime: 639134172592660202
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -2289,7 +2289,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5276068467445444158}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -2934,7 +2934,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5276068467445444158}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -3304,7 +3304,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5276068467445444158}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -3375,7 +3375,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5276068467445444158}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -3402,7 +3402,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5276068467445444158}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1

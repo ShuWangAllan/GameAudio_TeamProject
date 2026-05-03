@@ -5,7 +5,7 @@
 			<value>SYC_SwordMasterTaskBeginNarration</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b3f1ba01-ef94-4ba4-9363-f30f0f02b112}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{a76f1e17-f663-4205-b814-7800627fd2ca}">
 		<relationship name="effects">
 			<destination>{15d75f8e-010a-460f-aceb-0e35050ee29d}</destination>
+			<destination>{80f3e736-619b-4988-b390-0a1517005164}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{24a9cbe3-5958-445a-b5b4-bc6a8feccf4e}" />
@@ -106,4 +107,12 @@
 	</object>
 	<object class="MixerBusFader" id="{ca5bb1ec-0160-4521-b8ae-2e4a112bd6c5}" />
 	<object class="MixerBusFader" id="{15d75f8e-010a-460f-aceb-0e35050ee29d}" />
+	<object class="SpatialiserEffect" id="{80f3e736-619b-4988-b390-0a1517005164}">
+		<property name="minimumDistance">
+			<value>2.60000014</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 </objects>
