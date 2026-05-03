@@ -145,4 +145,4 @@ MonoBehaviour:
       Data4: 28835265
     Path: event:/Enviroment/SYC_branches
   randomAudioEmitCD3: 2
-  randomPlayChance: 10
+  randomPlayChance: 25

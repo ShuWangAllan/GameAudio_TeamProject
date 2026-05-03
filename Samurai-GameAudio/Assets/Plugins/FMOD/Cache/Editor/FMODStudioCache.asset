@@ -314,7 +314,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1000
 --- !u!114 &-7754453268136167441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,7 +755,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639134172592660202
+  lastModified: 639134228781361323
   FileSizes:
   - Name: Desktop
     Value: 2922
@@ -795,10 +795,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639134172592625897
+  lastModified: 639134228781316374
   FileSizes:
   - Name: Desktop
-    Value: 7792608
+    Value: 7797856
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -1965,7 +1965,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639134172592660202
+  cacheTime: 639134228781361323
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -3512,7 +3512,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1500
 --- !u!114 &8226452511362677964
 MonoBehaviour:
   m_ObjectHideFlags: 0
