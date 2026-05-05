@@ -160,6 +160,7 @@
 	<object class="MixerBusEffectChain" id="{803cf42a-06fa-4208-a712-8136aebd7082}">
 		<relationship name="effects">
 			<destination>{75cc848f-8aca-4882-9aeb-ace988af64ab}</destination>
+			<destination>{c9ef878c-89ce-4b2c-a3a1-b299a6f0f284}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{aa7fdcde-6da7-4e59-8633-c6dd97dc4a0f}" />
@@ -270,5 +271,42 @@
 	</object>
 	<object class="MixerBusPanner" id="{992315b8-59f2-45cf-aad9-f1aeb9c51b09}" />
 	<object class="MixerBusFader" id="{75cc848f-8aca-4882-9aeb-ace988af64ab}" />
+	<object class="ThreeEQEffect" id="{c9ef878c-89ce-4b2c-a3a1-b299a6f0f284}">
+		<property name="midGain">
+			<value>1.5</value>
+		</property>
+		<property name="highGain">
+			<value>3</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{900f1010-159c-4055-b6f0-6cbddc75745c}</destination>
+			<destination>{27a2a792-de03-424b-b747-556993ca12a8}</destination>
+			<destination>{81842634-94bb-40fe-b21c-a4fd414c4d92}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{60c9a856-c4c9-448e-8548-d8d497a0d334}" />
+	<object class="RandomizerModulator" id="{900f1010-159c-4055-b6f0-6cbddc75745c}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>highGain</value>
+		</property>
+		<property name="amount">
+			<value>21.5</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{27a2a792-de03-424b-b747-556993ca12a8}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>midGain</value>
+		</property>
+		<property name="amount">
+			<value>19.5</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{81842634-94bb-40fe-b21c-a4fd414c4d92}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>lowGain</value>
+		</property>
+		<property name="amount">
+			<value>20</value>
+		</property>
+	</object>
 </objects>

@@ -129,10 +129,7 @@
 	<object class="MixerBusFader" id="{18a9d309-47c5-4413-98cc-15b6714ab017}" />
 	<object class="ThreeEQEffect" id="{a2fdede5-1f9e-430f-b9bc-572197a05fd4}">
 		<property name="lowGain">
-			<value>-5.5</value>
-		</property>
-		<property name="midGain">
-			<value>-5.5</value>
+			<value>-6</value>
 		</property>
 		<property name="highGain">
 			<value>3</value>
@@ -194,7 +191,7 @@
 			<value>highGain</value>
 		</property>
 		<property name="amount">
-			<value>9</value>
+			<value>21.5</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{afec1478-0ef6-49b5-8166-3a882cb7ce25}">
@@ -202,7 +199,7 @@
 			<value>midGain</value>
 		</property>
 		<property name="amount">
-			<value>7.5</value>
+			<value>19.5</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{dbce1a4c-694b-4332-b2d5-462b44694ffd}">
@@ -210,7 +207,7 @@
 			<value>lowGain</value>
 		</property>
 		<property name="amount">
-			<value>7.5</value>
+			<value>20</value>
 		</property>
 	</object>
 </objects>
