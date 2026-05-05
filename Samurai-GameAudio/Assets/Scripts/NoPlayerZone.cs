@@ -1,9 +1,11 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class NoPlayerZone : MonoBehaviour
 {
@@ -11,6 +13,10 @@ public class NoPlayerZone : MonoBehaviour
     public bool playerInNoPlayerZone;
 
     public Image turnBack;
+
+    [Header("FMOD")]
+    public EventReference noPlayerZoneSFX;
+    private EventInstance noPlayerZoneInstance;
 
     Volume v;
 
@@ -40,12 +46,11 @@ public class NoPlayerZone : MonoBehaviour
         {
             tempColor.a += 0.02f;
             v.weight += t;
-
         }
         else if (playerInNoPlayerZone == false && v.weight > 0)
         {
             tempColor.a -= 0.02f;
-            v.weight -= t;
+            v.weight -= t; 
         }
 
         turnBack.color = tempColor;
@@ -55,14 +60,26 @@ public class NoPlayerZone : MonoBehaviour
     void OnTriggerEnter(Collider player)
     {
         playerInNoPlayerZone = true;
+        //PlayNoPlayerZoneSFX();
     }
 
     void OnTriggerExit(Collider player)
     {
         playerInNoPlayerZone = false;
+        //StopNoPlayerZoneSFX();
     }
 
+    //void PlayNoPlayerZoneSFX()
+    //{
+    //    noPlayerZoneInstance.start();
+    //    Debug.Log("Audio played");
+    //}
 
+    //void StopNoPlayerZoneSFX()
+    //{
+    //    noPlayerZoneInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    //    Debug.Log("Audio Stopped");
+    //}
 
 
 }

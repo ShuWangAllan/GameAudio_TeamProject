@@ -755,10 +755,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639134228781361323
+  lastModified: 639136038445680090
   FileSizes:
   - Name: Desktop
-    Value: 2922
+    Value: 2962
   Exists: 1
 --- !u!114 &-5325625988281323392
 MonoBehaviour:
@@ -795,10 +795,10 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639134228781316374
+  lastModified: 639136038445667232
   FileSizes:
   - Name: Desktop
-    Value: 7797856
+    Value: 8098592
   Exists: 1
 --- !u!114 &-4993103217256234880
 MonoBehaviour:
@@ -1117,6 +1117,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1026
+--- !u!114 &-3299310061911989595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/AlertVFX
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/AlertVFX
+  Guid:
+    Data1: 535121047
+    Data2: 1125830400
+    Data3: -217598548
+    Data4: -447259626
+  Banks:
+  - {fileID: -5276068467445444158}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3065076189549438276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1959,13 +1986,14 @@ MonoBehaviour:
   - {fileID: -749124580800424855}
   - {fileID: 6370683403929901160}
   - {fileID: -2593825579276606363}
+  - {fileID: -3299310061911989595}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5276068467445444158}
   StringsBanks:
   - {fileID: -5344990485871040995}
   cacheVersion: 131858
-  cacheTime: 639134228781361323
+  cacheTime: 639136038447543977
   SerializableEventsDict:
   - key: event:/Staff/Fire(Torches)
     index: 0
@@ -2489,7 +2517,7 @@ MonoBehaviour:
   Path: ../GameAudioAssets/FModLib/Build/Desktop/Fire(Torches).bank
   Name: Fire(Torches)
   StudioPath: bank:/SW_Banks/Fire(Torches)
-  lastModified: 639133552912718719
+  lastModified: 639136038447543977
   FileSizes:
   - Name: Desktop
     Value: 153088
