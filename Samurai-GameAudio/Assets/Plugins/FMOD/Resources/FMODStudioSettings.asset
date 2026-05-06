@@ -421,8 +421,7 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     Plugins:
-      Value:
-      - fmod_haptics
+      Value: []
       HasValue: 1
     StaticPlugins:
       Value: []
