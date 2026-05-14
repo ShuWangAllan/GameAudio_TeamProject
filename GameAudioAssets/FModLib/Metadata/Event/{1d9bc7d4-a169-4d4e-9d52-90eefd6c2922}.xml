@@ -177,14 +177,21 @@
 			<value>5</value>
 		</property>
 		<property name="maximumDistance">
+<<<<<<< Updated upstream
 			<value>30</value>
+=======
+			<value>50</value>
+>>>>>>> Stashed changes
 		</property>
 		<property name="overrideRange">
 			<value>true</value>
 		</property>
+<<<<<<< Updated upstream
 		<property name="extentMode">
 			<value>1</value>
 		</property>
+=======
+>>>>>>> Stashed changes
 	</object>
 	<object class="MixerBusFader" id="{e8987575-b8ed-429b-af53-13322c24018d}" />
 </objects>
