@@ -38,6 +38,7 @@
 			<destination>{0e5da2a8-064a-46b3-8a8f-07f007eb3c91}</destination>
 			<destination>{e4a5d01c-e526-4acf-8985-7e898334379b}</destination>
 			<destination>{fed2f5e1-5c57-4bbb-ad13-cef8c223def7}</destination>
+			<destination>{e0489d35-e221-4e9a-a5f1-c9ad793762f9}</destination>
 		</relationship>
 	</object>
 	<object class="Tag" id="{2e193f8d-92b5-4f55-a7d7-fbd073e56354}">
@@ -218,6 +219,11 @@
 	<object class="Tag" id="{fed2f5e1-5c57-4bbb-ad13-cef8c223def7}">
 		<property name="name">
 			<value>haptic</value>
+		</property>
+	</object>
+	<object class="Tag" id="{e0489d35-e221-4e9a-a5f1-c9ad793762f9}">
+		<property name="name">
+			<value>placeholder</value>
 		</property>
 	</object>
 </objects>

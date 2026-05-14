@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{477410e5-4a6d-462e-bd1e-4d558ce488ec}">
 		<property name="note">
 			<value>This is an example of a multi-layered ambience event using parameters, scatterer instruments, sidechaining, and automation.
@@ -886,13 +886,6 @@ Rain recordings provided by Xue Qiao of BB Studio, Chongqing Qiaoya Music and Cu
 		<property name="voiceStealing">
 			<value>3</value>
 		</property>
-		<relationship name="sounds">
-			<destination>{10daf1fa-38ae-4fba-8ed5-ddfc3bc7f5ea}</destination>
-			<destination>{2c2720d9-77ef-4b73-b76c-fd911a018254}</destination>
-			<destination>{64141d32-2506-4f98-87cf-fb9ea27c65f0}</destination>
-			<destination>{7478cfaf-2284-4c65-b244-50c9a879fb7e}</destination>
-			<destination>{6db25dfa-6df4-469c-8eeb-676698bcd8bd}</destination>
-		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{38836ba1-b43b-4e58-ad44-b2fbbfe9b0ea}">
 		<relationship name="effects">
@@ -1071,61 +1064,6 @@ Rain recordings provided by Xue Qiao of BB Studio, Chongqing Qiaoya Music and Cu
 	</object>
 	<object class="MixerBusFader" id="{b277fe39-b4a4-4f40-afd4-3f1040930461}" />
 	<object class="Sidechain" id="{01fe3eb2-0059-411e-bb83-bd3a6c79db30}" />
-	<object class="SingleSound" id="{10daf1fa-38ae-4fba-8ed5-ddfc3bc7f5ea}">
-		<property name="length">
-			<value>0</value>
-		</property>
-		<property name="voiceStealing">
-			<value>3</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{098ad948-0b1b-4602-9662-7c887441233f}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{2c2720d9-77ef-4b73-b76c-fd911a018254}">
-		<property name="length">
-			<value>0</value>
-		</property>
-		<property name="voiceStealing">
-			<value>3</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{44e584d1-9271-4504-b359-b34aaa1b8dca}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{64141d32-2506-4f98-87cf-fb9ea27c65f0}">
-		<property name="length">
-			<value>0</value>
-		</property>
-		<property name="voiceStealing">
-			<value>3</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{d190c941-7722-49de-a3d2-4eaf87525eeb}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{7478cfaf-2284-4c65-b244-50c9a879fb7e}">
-		<property name="length">
-			<value>0</value>
-		</property>
-		<property name="voiceStealing">
-			<value>3</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{6bda59a1-d3c2-4179-8177-0d03e70bd9ed}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{6db25dfa-6df4-469c-8eeb-676698bcd8bd}">
-		<property name="length">
-			<value>0</value>
-		</property>
-		<property name="voiceStealing">
-			<value>3</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{5617817b-fc07-4aee-9c56-3d6b04e9c776}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusFader" id="{b323ee1f-efb9-4f46-88f3-f4d86662b210}" />
 	<object class="AutomationPoint" id="{ca62ad3d-3f08-4448-a00d-44a11b3f7647}">
 		<property name="position">
